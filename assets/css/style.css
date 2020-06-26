@@ -1,0 +1,117 @@
+body html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.game-title {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  font-size: x-large;
+  margin-top: 2vh;
+}
+
+.outer {
+  position: relative;
+  height: 70vh;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+/*-----Buttons----*/
+.stick-top {
+  width: 100%;
+  padding: 5px;
+}
+
+.power {
+  display: inline-block;
+  float: left;
+}
+
+.strict {
+  display: inline-block;
+  float: left;
+}
+
+.counter {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.row-2 {
+  height: 100%;
+}
+
+.c-left {
+  background-color: green;
+  height: 90%;
+  width: 30%;
+  float: left;
+}
+
+.c-right {
+    position: relative;
+  display: inline-block;
+  text-align: center;
+  background-color: blue;
+  height: 90%;
+  width: 70%;
+}
+
+.base {
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-color: black;
+}
+
+.base:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/*https://spin.atomicobject.com/2015/07/14/css-responsive-square/*/
+
+@media only screen and (min-width: 320px) {
+  .base {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: black;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .base {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: black;
+  }
+
+  .base:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .base {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: black;
+  }
+
+  .base:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
