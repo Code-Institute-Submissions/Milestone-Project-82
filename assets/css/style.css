@@ -4,6 +4,7 @@ body html {
   margin: 0;
 }
 
+/*-------------------Game-Title----*/
 .game-title {
   width: 100%;
   height: 10vh;
@@ -12,106 +13,140 @@ body html {
   margin-top: 2vh;
 }
 
+/*-------------------Game-Container----*/
 .outer {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   margin: auto;
-  text-align: center;
+  background-color: grey;
   border: 1px solid black;
+  overflow: hidden;
 }
-/*-----Buttons----*/
+
+/*-----------------Control-Buttons----*/
 .stick-top {
   width: 100%;
   padding: 5px;
 }
 
-.power {
+#power {
   display: inline-block;
   float: left;
 }
 
-.strict {
+#strict {
   display: inline-block;
   float: left;
 }
 
-.counter {
+#counter {
   border: 1px solid black;
   display: inline-block;
   margin: 0 auto;
 }
 
-.row-2 {
+.game-field {
   height: 100%;
 }
 
 .c-left {
-  background-color: green;
   height: 90%;
   width: 30%;
-  float: left;
+  display: inline-block;
 }
 
 .c-right {
-    position: relative;
+  position: relative;
   display: inline-block;
   text-align: center;
-  background-color: blue;
   height: 90%;
   width: 70%;
 }
 
+/*-------------------Game-Buttons----*/
 .base {
-  width: 45%;
+  position: relative;
+  width: 150px;
+  vertical-align: middle;
   margin: 0 auto;
   margin-top: 2%;
-  background-color: black;
+  transform: rotate(45deg);
 }
 
-.base:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+.game-button {
+  position: absolute;
+  width: 72px;
+  height: 72px;  
+  border-radius: 50%;
 }
-/*https://spin.atomicobject.com/2015/07/14/css-responsive-square/*/
 
+#button-red {
+  background-color: red;
+  top: 0;
+  left: 0
+}
+
+#button-blue {
+  background-color: blue;
+  top: 0;
+  right: 0;
+}
+
+#button-green {
+  background-color: green;
+  bottom: 0;
+  left: 0;
+}
+
+#button-yellow {
+  background-color: yellow;
+  bottom: 0;
+  right: 0;
+}
+
+/*----mobile-small----*/
 @media only screen and (min-width: 320px) {
   .base {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     margin-top: 10%;
-    background-color: black;
   }
 }
 
+/*----mobile-large----*/
 @media only screen and (min-width: 425px) {
   .base {
-    width: 60%;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
-    margin-top: 2%;
-    background-color: black;
+    margin-top: 8%;
+  }
+}
+/*----tablet----*/
+@media only screen and (min-width: 768px) {
+  .outer {
+  position: relative;
+  height: 70vh;
+  width: 70vw;
+  margin: auto;
+  border: 1px solid black;
   }
 
-  .base:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+  .base {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 5%;
   }
 }
 
+/*----laptop-large----*/
 @media only screen and (min-width: 1440px) {
   .base {
     width: 50%;
     margin: 0 auto;
-    margin-top: 2%;
-    background-color: black;
-  }
-
-  .base:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+    margin-top: 2%; 
   }
 }
 
