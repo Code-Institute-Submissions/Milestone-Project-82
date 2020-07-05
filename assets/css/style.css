@@ -1,16 +1,25 @@
+/*-------------------HTML----*/
+
 body html {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
+body {
+    background-image: url(../images/grey_wash_wall.png) /*https://www.toptal.com/designers/subtlepatterns/?s=grey*/
+}
+
 /*-------------------Game-Title----*/
 .game-title {
   width: 100%;
   height: 10vh;
+  color: whitesmoke;
+  font-family: 'Original Surfer', cursive;
   text-align: center;
   font-size: x-large;
   margin-top: 2vh;
+  margin-bottom: 8px;
 }
 
 /*-------------------Game-Container----*/
@@ -18,56 +27,110 @@ body html {
   position: relative;
   height: 80vh;
   margin: auto;
-  background-color: grey;
-  border: 1px solid black;
+  padding-right: 0;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); /*https://www.eggradients.com/category/metal-gradient*/
+  border: 2px solid black;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 /*-----------------Control-Buttons----*/
 .stick-top {
-  width: 100%;
+  position: relative;
   padding: 5px;
+  background-color: transparent;
+  border-bottom: 2px black solid;
+  
+}
+
+.control-button {
+  display: inline-block;
+  float: left;
+  margin: 1px;
 }
 
 #power {
-  display: inline-block;
-  float: left;
+  
 }
 
 #strict {
-  display: inline-block;
-  float: left;
+  
+}
+
+#start {
+  
+}
+
+.round-count {
+    display: inline-block;
+    padding-left: 15px;
+    font-family: 'Original Surfer', cursive;
+    color: whitesmoke;
 }
 
 #counter {
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
   display: inline-block;
-  margin: 0 auto;
+  text-align: center;
+  right: 0;
+  margin: 0;
+  margin-left: 8px;
+  height: 30px;
+  width: 30px;
 }
 
+/*-------------------Game-Buttons-Field----*/
 .game-field {
   height: 100%;
 }
 
 .c-left {
   height: 90%;
-  width: 30%;
-  display: inline-block;
+  width: 40%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .c-right {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 90%;
-  width: 70%;
+  width: 60%;
+}
+
+/*-------------------Game-Stick----*/
+
+.stick-base {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+}
+
+/*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
+
+.stick {
+     width: 70px;
+    height: 70px;
+    margin-top: 2%;
+    border-radius: 50%;
+    background-color: crimson;
 }
 
 /*-------------------Game-Buttons----*/
 .base {
   position: relative;
-  width: 150px;
-  vertical-align: middle;
+  left: -10px;
+  width: 140px;
+  height: 140px;
   margin: 0 auto;
   margin-top: 2%;
   transform: rotate(45deg);
@@ -75,13 +138,13 @@ body html {
 
 .game-button {
   position: absolute;
-  width: 72px;
-  height: 72px;  
+  width: 68px;
+  height: 68px;  
   border-radius: 50%;
 }
 
 #button-red {
-  background-color: red;
+  background-color: darkred;
   top: 0;
   left: 0
 }
@@ -104,15 +167,21 @@ body html {
   right: 0;
 }
 
-/*----mobile-small----*/
-@media only screen and (min-width: 320px) {
-  .base {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    margin-top: 10%;
-  }
+/*-------------------Colours----*/
+
+.metallic {
+    background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);  /*https://simurai.com/lab/2011/08/21/brushed-metal*/
 }
+}
+
+/*-------------------Media-Queries----*/
 
 /*----mobile-large----*/
 @media only screen and (min-width: 425px) {

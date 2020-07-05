@@ -12,27 +12,34 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Simon Game</title>
+    <title>Simon Memory Game</title>
   </head>
 
   <body>
-  <!-----------------------Game-Title----->
-    <div class="game-title">Simon Game</div>
+    <!-----------------------Game-Title----->
+    <div class="game-title">Simon Memory Game</div>
 
     <!-----------------------Game-Container----->
     <div class="container-sm outer">
-
-    <!-----------------------Control-Buttons----->
+      <!-----------------------Control-Buttons----->
       <div class="row stick-top">
-        <button id="power"></button>
-        <button id="strict"></button>
-        <div id="counter">Level 1</div>
+       <button class="btn btn-sm control-button metallic" data-toggle="button" id="power">POWER</button>
+        <button class="btn btn-sm control-button metallic" data-toggle="button" id="strict">STRICT</button>
+        <button class="btn btn-sm control-button metallic" id="start">START</button>
+        <div class="round-count">ROUND:</div>
+        <div id="counter"></div>
       </div>
-      <!-----------------------Game-Buttons----->
+      <!-----------------------Game-Buttons-Field----->
       <div class="row game-field">
-        <div class="col-md-4 c-left"></div>
+        <div class="col-md-4 c-left">
+          <div class="align-middle stick-base">
+            <div class="stick"></div>
+          </div>
+        </div>
 
+        <!-----------------------Game-Buttons----->
         <div class="col-md-8 c-right">
           <div class="align-middle base">
             <div class="game-button" id="button-red"></div>
@@ -43,7 +50,7 @@
         </div>
       </div>
     </div>
-<!-----------------------Scripts----->
+    <!-----------------------Scripts----->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -59,5 +66,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
