@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://kit.fontawesome.com/d1f3fcb938.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -24,12 +25,12 @@
     <!-----------------------Game-Container----->
     <div class="container-sm outer">
       <!-----------------------Control-Buttons----->
-      <div class="row stick-top">
-       <button class="btn btn-sm control-button metallic" data-toggle="button" id="power">POWER</button>
-        <button class="btn btn-sm control-button metallic" data-toggle="button" id="strict">STRICT</button>
+      <div  class="row btn-group-toggle stick-top" data-toggle="buttons">
+       <button class="btn btn-sm control-button metallic" id="power"><i class="fas fa-power-off"></i></button>
+        <button class="btn btn-sm control-button metallic" id="strict">STRICT</button>
         <button class="btn btn-sm control-button metallic" id="start">START</button>
         <div class="round-count">ROUND:</div>
-        <div id="counter"></div>
+        <div id="counter">1</div>
       </div>
       <!-----------------------Game-Buttons-Field----->
       <div class="row game-field">
@@ -42,10 +43,10 @@
         <!-----------------------Game-Buttons----->
         <div class="col-md-8 c-right">
           <div class="align-middle base">
-            <div class="game-button" id="button-red"></div>
-            <div class="game-button" id="button-blue"></div>
-            <div class="game-button" id="button-green"></div>
-            <div class="game-button" id="button-yellow"></div>
+            <div class="game-button" id="button-top"></div>
+            <div class="game-button" id="button-right"></div>
+            <div class="game-button" id="button-left"></div>
+            <div class="game-button" id="button-bottom"></div>
           </div>
         </div>
       </div>

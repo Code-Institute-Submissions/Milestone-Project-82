@@ -70,7 +70,8 @@ body {
 }
 
 #counter {
-  border: 1px solid whitesmoke;
+  background: #330000;
+  color: red;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -90,8 +91,8 @@ body {
   height: 90%;
   width: 40%;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-right {
@@ -111,11 +112,9 @@ body {
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
     background-color: darkslategray;
 }
-
-/*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
 
 .stick {
      width: 70px;
@@ -141,30 +140,40 @@ body {
   width: 68px;
   height: 68px;  
   border-radius: 50%;
+  cursor: pointer;
 }
 
-#button-red {
+.game-button:hover {
+    box-shadow: inset 0px 0px 0px 1px white;
+    box-sizing: border-box; /*https://www.tutorialrepublic.com/faq/how-to-place-border-inside-of-div-element-using-css.php*/
+}
+
+#button-top {
   background-color: darkred;
   top: 0;
   left: 0
 }
 
-#button-blue {
+#button-right {
   background-color: blue;
   top: 0;
   right: 0;
 }
 
-#button-green {
+#button-left {
   background-color: green;
   bottom: 0;
   left: 0;
 }
 
-#button-yellow {
+#button-bottom {
   background-color: yellow;
   bottom: 0;
   right: 0;
+}
+
+.active {
+    background-color: white;
 }
 
 /*-------------------Colours----*/
@@ -178,7 +187,6 @@ body {
     hsl(0,0%,90%) 47%, 
     hsl(0,0%,78%) 53%,
     hsl(0,0%,70%)100%);  /*https://simurai.com/lab/2011/08/21/brushed-metal*/
-}
 }
 
 /*-------------------Media-Queries----*/
