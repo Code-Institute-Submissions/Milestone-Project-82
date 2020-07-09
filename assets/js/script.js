@@ -1,3 +1,6 @@
+/*Base code has come from freecodecamp.org, as this was my first project using JS i thought it best to try not to reinvent the wheel
+and use the code available online and fit it to my needs*/
+
 let order = []; /*order of flashes*/
 let playerChoice = []; /*order player has pressed lights*/
 let flash; /*number of flashes*/
@@ -193,7 +196,7 @@ function check() {
     if (playerChoice[playerChoice.length - 1] !== order[playerChoice.length - 1]) {
         good = false;
     }
-    if (playerChoice.length == 3 && good) {
+    if (playerChoice.length == 20 && good) {
         winGame();
     }
     if (good == false) {
@@ -235,6 +238,6 @@ function winGame() {
     win = true;
     restart = setTimeout(() => {
         play();
-    },2000)
+    },3000)
 }
 
