@@ -32,40 +32,38 @@ body {
   height: 80vh;
   margin: auto;
   padding-right: 0;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); /*https://www.eggradients.com/category/metal-gradient*/
-  border: 2px solid black;
+  background-color: #3b3535;
+ /* background-image: linear-gradient(315deg, #000000 5%, #414141 74%); /*https://www.eggradients.com/category/metal-gradient*/ 
+  border: 2px solid grey;
   border-radius: 5px;
   overflow: hidden;
 }
 
 /*-----------------Control-Buttons----*/
-.stick-top {
+.control-top {
   position: relative;
   padding: 5px;
   background-color: transparent;
-  border-bottom: 2px black solid;
+  border-bottom: 3px black solid;
   
 }
 
 .control-button {
   display: inline-block;
-  float: left;
-  margin: 1px;
+  padding: 3px;
+  margin: 2px;
+  border-radius: 30%;
+  font-family: 'Original Surfer', cursive;
+  font-size: x-small;
 }
 
-#power {
-  
-}
+/*-------------------Round counter----*/
 
-#strict {
-  
+.round-count-display {
+    position: absolute;
+    display: flex;
+    right: 20px;
 }
-
-#start {
-  
-}
-
 
 .round-count {
     display: inline-block;
@@ -74,17 +72,18 @@ body {
     color: whitesmoke;
 }
 
-#counter {
+.counter {
   background: #330000;
   color: red;
-  border-radius: 50%;
+  border-radius: 30%;
   display: inline-block;
   text-align: center;
   right: 0;
   margin: 0;
   margin-left: 8px;
   height: 30px;
-  width: 30px;
+  width: 40px;
+  overflow: hidden;
 }
 
 /*-------------------Game-Buttons-Field----*/
@@ -118,13 +117,14 @@ body {
 
 .light-display-row {
     align-items: center;
-  justify-content: center;
-  text-align: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .name {
     color: whitesmoke;
     font-family: 'Original Surfer', cursive;
+    display: inline-block
 }
 
 .light {
@@ -135,6 +135,7 @@ body {
     margin-left: 5px;
     margin-top: 8px;
     border-radius: 50%;
+    box-shadow: 1px 1px 1px black;
 }
 
 .lightOff {
@@ -145,6 +146,12 @@ body {
     background-color: red;
 }
 
+.mute-container {
+    position: absolute;
+    top: 0;
+    right: -26px;
+}
+
 /*-------------------Game Stick----*/
 
 .stick-base {
@@ -152,7 +159,7 @@ body {
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: center; /*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
+    justify-content: center;    /*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
     background-color: darkslategray;
 }
 
@@ -162,12 +169,14 @@ body {
     margin-top: 2%;
     border-radius: 50%;
     background-color: crimson;
+    box-shadow: 5px 5px 2px black;
 }
 
 /*-------------------Game-Buttons----*/
 .base {
   position: relative;
   left: -10px;
+  top: -10px;
   width: 140px;
   height: 140px;
   margin: 0 auto;
@@ -180,6 +189,8 @@ body {
   width: 68px;
   height: 68px;  
   border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 7px 7px 5px black;
 }
 
 #button-top {
@@ -201,7 +212,7 @@ body {
 }
 
 #button-bottom {
-  background-color: #ffff00;
+  background-color: #ffcc00;
   bottom: 0;
   right: 0;
 }
@@ -216,7 +227,7 @@ body {
     linear-gradient(180deg, hsl(0,0%,78%)  0%, 
     hsl(0,0%,90%) 47%, 
     hsl(0,0%,78%) 53%,
-    hsl(0,0%,70%)100%);  /*https://simurai.com/lab/2011/08/21/brushed-metal*/
+    hsl(0,0%,70%)100%);  /* From: https://simurai.com/lab/2011/08/21/brushed-metal*/
 }
 
 /*-------------------Media-Queries----*/
@@ -227,33 +238,75 @@ body {
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    margin-top: 8%;
+    margin-top: -5px;
   }
+
+  .game-button {
+  width: 72px;
+  height: 72px;  
 }
+
 /*----tablet----*/
 @media only screen and (min-width: 768px) {
   .outer {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   width: 70vw;
   margin: auto;
-  border: 1px solid black;
+  box-shadow: 10px 10px 5px black;
   }
 
-  .base {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    margin-top: 5%;
+  .game-title {
+      font-size: xx-large;
+  }
+}
+
+/*----laptop-small----*/
+@media only screen and (min-width: 1024px) {
+    .control-top {
+    height: 70px;
+    padding: 5px;
+}
+
+    .control-button {
+    margin: 5px;
+}
+
+    .round-count {
+    display: inline-block;
+    padding-left: 15px;
+    line-height: 45px;
+}
+
+    .counter {
+     margin-left: 8px;
+    height: 50px;
+    width: 50px;
+    line-height: 45px;
+    font-size: large;
+}
+
+    .base {
+    width: 320px;
+    height: 320px;
+}
+
+  .game-button {
+    width: 155px;
+    height: 155px;  
+}
+
+  .stick-base {
+    width: 120px;
+    height: 120px;
+  }
+
+  .stick {
+    width: 90px;
+    height: 90px;
   }
 }
 
 /*----laptop-large----*/
 @media only screen and (min-width: 1440px) {
-  .base {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2%; 
-  }
-}
 
