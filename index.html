@@ -21,39 +21,111 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Audio files from https://www.freecodecamp.org/news/simon-javascript-game-tutorial/-->
+    <audio id="audio1">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" />
+    </audio>
+    <audio id="audio2">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" />
+    </audio>
+    <audio id="audio3">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" />
+    </audio>
+    <audio id="audio4">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" />
+    </audio>
     <title>Simon Memory Game</title>
   </head>
 
   <body>
-    <!-----------------------Game-Title----->
+    <!-----------------------Game Title----->
+
     <div class="game-title">Simon Memory Game</div>
 
+<!-----------------------Rules Modal----->
+
+    <div
+      class="modal fade"
+      id="rules-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How To Play</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-dark text-light">
+           <span><i class="fas fa-power-off"></i> : Power Switch</span><br>
+           <span><i class="fas fa-sync-alt"></i> : Strict mode - This will send you back to start with any wrong guesses.</span><br>
+           <span><i class="fas fa-volume-up"></i> : Mute Button</span><br>
+           <span><i class="fas fa-play-circle"></i> : Play Button</span><br>
+           <br>
+           <p>Try to match the order of the colours, if you get to round 20 you WIN!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
     <!-----------------------Game-Container----->
+
     <div class="container-sm outer">
+
       <!-----------------------Control-Buttons----->
-      <div class="row stick-top">
+
+      <div class="row control-top">
         <button class="btn btn-sm control-button metallic" id="power">
           <i class="fas fa-power-off"></i>
         </button>
         <button class="btn btn-sm control-button metallic" id="strict">
-          STRICT
+          <i class="fas fa-sync-alt"></i>
+        </button>
+        <button class="btn btn-sm control-button metallic" id="mute">
+          <i class="fas fa-volume-up"></i>
         </button>
         <button class="btn btn-sm control-button metallic" id="start">
-          START
+          <i class="fas fa-play-circle"></i>
         </button>
-        <div class="round-count">ROUND:</div>
-        <div id="counter"></div>
+        <button
+          class="btn btn-sm control-button metallic"
+          id="rules"
+          data-toggle="modal"
+          data-target="#rules-modal"
+        >
+          <i class="fas fa-book-open"></i>
+        </button>
+        <div class="round-count-display">
+          <div class="round-count">ROUND:</div>
+          <div class="counter" id="counter"></div>
+        </div>
       </div>
+
       <!-----------------------Game-Buttons-Field----->
+
       <div class="row game-field">
         <div class="col-md-4 c-left">
           <div class="light-display">
-            <div class="light-display-row">
-              <div class="name inline">ON</div>
+            <div class="">
+              <div class="name">ON</div>
               <div class="light lightOff" id="onLight">&nbsp;</div>
+              <div class="mute-container">
+                <div class="name"><i class="fas fa-volume-mute"></i></div>
+                <div class="light lightOff" id="muteLight">&nbsp;</div>
+              </div>
             </div>
             <div>
-              <div class="name inline">Strict</div>
+              <div class="name">Strict</div>
               <div class="light lightOff" id="strictLight">&nbsp;</div>
             </div>
           </div>
@@ -63,6 +135,7 @@
         </div>
 
         <!-----------------------Game-Buttons----->
+
         <div class="col-md-8 c-right">
           <div class="align-middle base">
             <div class="game-button" id="button-top"></div>
@@ -73,7 +146,9 @@
         </div>
       </div>
     </div>
+
     <!-----------------------Scripts----->
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

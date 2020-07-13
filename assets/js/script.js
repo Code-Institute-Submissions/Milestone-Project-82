@@ -1,6 +1,7 @@
 /*Base code has come from freecodecamp.org, as this was my first project using JS i thought it best to try not to reinvent the wheel
 and use the code available online and fit it to my needs*/
 
+/*----------------------------------------------------Variables--*/
 let order = []; /*order of flashes*/
 let playerChoice = []; /*order player has pressed lights*/
 let flash; /*number of flashes*/
@@ -25,6 +26,10 @@ const onButton = document.querySelector('#power');
 const startButton = document.querySelector('#start');
 const strictLight = document.getElementById('strictLight');
 const onLight = document.getElementById('onLight');
+const audio1 = document.getElementById('audio1');
+const audio2 = document.getElementById('audio2');
+const audio3 = document.getElementById('audio3');
+const audio4 = document.getElementById('audio4');
 
 /*-------------------------------------------Strict mode on/off--*/
 strictButton.addEventListener('click', (event) => {
@@ -38,16 +43,17 @@ strictButton.addEventListener('click', (event) => {
     }
 });
 
-/*-------------------------------------------Game/Display on/off--*/
+/*-------------------------------------------Game and display on/off--*/
 onButton.addEventListener('click', (event) => {
     if (on == false) {
         on = true;
         turnCounter.innerHTML = '-';  
         onLight.classList.add('lightOn');
+        flashAllColors();
     } else {
         on = false;
         turnCounter.innerHTML = '';
-        onLight.classList.remove('lightOn')
+        onLight.classList.remove('lightOn');
         onLight.classList.add('lightOff');
         clearColor();
         clearInterval(intervalId);
@@ -91,6 +97,7 @@ function gameTurn() {
     }
     /*-------------------------------------------Computer's turn--*/
     if (compTurn) {
+        on = false;
         clearColor();
         setTimeout(() => {               
             if (order[flash] == 1) one();
@@ -104,19 +111,23 @@ function gameTurn() {
 
 /*------------------------------Changes buttons to lighter colour--*/
 function one() {
-    buttonTop.style.backgroundColor = '#ff9980';/*#ff9980*/
+    audio1.play();
+    buttonTop.style.backgroundColor = '#ff9980';
 }
 
 function two() {
-    buttonLeft.style.backgroundColor = '#66ff66';/*#66ff66*/
+    audio2.play();
+    buttonLeft.style.backgroundColor = '#66ff66';
 }
 
 function three() {
-    buttonRight.style.backgroundColor = '#6666ff';/*6666ff*/
+    audio3.play();
+    buttonRight.style.backgroundColor = '#6666ff';
 }
 
 function four() {
-    buttonBottom.style.backgroundColor = '#ffff99';/*#ffff99*/
+    audio4.play();
+    buttonBottom.style.backgroundColor = '#ffff99';
 }
 
  /*------------------------------Returns button colour to normal--*/
@@ -124,10 +135,32 @@ function clearColor() {
     buttonTop.style.backgroundColor = '#cc2900';
     buttonLeft.style.backgroundColor = '#00b300';
     buttonRight.style.backgroundColor = '#0000cc';
-    buttonBottom.style.backgroundColor = '#ffff00';
+    buttonBottom.style.backgroundColor = '#ffcc00';
+}
+
+/*------------------------------Flashes buttons in order--*/
+function flashAllColors() {
+    buttonTop.style.backgroundColor = '#ff9980';
+    audio1.play();
+    setTimeout(function() {
+        buttonLeft.style.backgroundColor = '#66ff66';;
+        audio2.play();
+    }, 300);
+    setTimeout(function() {
+        buttonBottom.style.backgroundColor = '#ffff99';
+        audio4.play();
+    }, 500);
+    setTimeout(function() {
+        buttonRight.style.backgroundColor = '#6666ff';
+        audio3.play();
+    }, 700);
+    setTimeout(function() {
+        clearColor();
+    }, 1300);
 }
 
 /*------------------------------Flashes all buttons--*/
+
 function flashColor() {
     buttonTop.style.backgroundColor = '#ff9980';
     buttonLeft.style.backgroundColor = '#66ff66';
@@ -135,7 +168,7 @@ function flashColor() {
     buttonBottom.style.backgroundColor = '#ffff99';
 }
 
-/*-----------------------------------------Clickable buttons--*/
+/*--------------------------------------------------------Clickable buttons--*/
 
 /*------------------------------Calls the function to flash colours--*/
 
@@ -144,11 +177,7 @@ buttonTop.addEventListener('click', (event) => {  /*Red*/
         playerChoice.push(1);
         one();
         check();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300)
-        }
+        noWin();
     }
 });
 
@@ -157,11 +186,7 @@ buttonLeft.addEventListener('click', (event) => {  /*Green*/
         playerChoice.push(2);
         two();
         check();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300)
-        }
+        noWin();
     }
 });
 
@@ -170,11 +195,7 @@ buttonRight.addEventListener('click', (event) => {  /*Blue*/
         playerChoice.push(3);
         three();
         check();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300)
-        }
+        noWin();
     }
 });
 
@@ -183,20 +204,28 @@ buttonBottom.addEventListener('click', (event) => {  /*Yellow*/
         playerChoice.push(4);
         four();
         check();
-        if (!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300)
-        }
+        noWin();    
     }
 });
 
-/*------------Checks to see if player choice is wrong, the game is won or player choice is correct--*/
+/*------------------------------Resets colours if game is not won--*/
+
+function noWin() {
+    if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300)
+    }
+}
+
+/*------------Checks to see if player choice is wrong, if the game is won or if player choice is correct--*/
+
 function check() {
     if (playerChoice[playerChoice.length - 1] !== order[playerChoice.length - 1]) {
         good = false;
     }
-    if (playerChoice.length == 20 && good) {
+    if (playerChoice.length == 2 && good) {
+        flashAllColors();
         winGame();
     }
     if (good == false) {
@@ -209,11 +238,8 @@ function check() {
             if (strict) {
                 play();
             } else {
-                compTurn = true;
-                flash = 0
-                playerChoice = [];
+                resetPlayerTurn();
                 good = true;
-                intervalId = setInterval(gameTurn, 800);
             }
         }, 800)
 
@@ -222,22 +248,31 @@ function check() {
 
     if (turn == playerChoice.length && good && !win) {
         turn++;
-        playerChoice = [];
-        compTurn = true;
+        resetPlayerTurn();
         turnCounter.innerHTML = turn;
-        flash = 0;
-        intervalId = setInterval(gameTurn, 800);
     }
 }
 
 /*------------------------------Game has been won! Restarts for another shot--*/
+
+function resetPlayerTurn() {
+    playerChoice = [];
+    compTurn = true;
+    flash = 0;
+    intervalId = setInterval(gameTurn, 800);
+}
+
+/*------------------------------Game has been won! Restarts for another shot--*/
+
 function winGame() {
-    flashColor();
+    setInterval(() => {
+        flashColor();
+    }, 200)
     turnCounter.innerHTML = 'WIN!';
     on = false;
     win = true;
     restart = setTimeout(() => {
         play();
-    },3000)
+    }, 10000)
 }
 
