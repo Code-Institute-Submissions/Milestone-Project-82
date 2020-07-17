@@ -19,11 +19,15 @@ body {
   width: 100%;
   height: 10vh;
   color: whitesmoke;
-  font-family: 'Original Surfer', cursive;
   text-align: center;
   font-size: x-large;
   margin-top: 2vh;
   margin-bottom: 8px;
+}
+
+.instruction-header {
+    color: whitesmoke;
+    text-align: center;
 }
 
 /*-------------------Game-Container----*/
@@ -68,7 +72,6 @@ body {
 .round-count {
     display: inline-block;
     padding-left: 15px;
-    font-family: 'Original Surfer', cursive;
     color: whitesmoke;
 }
 
@@ -123,7 +126,6 @@ body {
 
 .name {
     color: whitesmoke;
-    font-family: 'Original Surfer', cursive;
     display: inline-block
 }
 
@@ -170,6 +172,9 @@ body {
     border-radius: 50%;
     background-color: crimson;
     box-shadow: 5px 5px 2px black;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
 }
 
 /*-------------------Game-Buttons----*/
@@ -228,6 +233,10 @@ body {
     hsl(0,0%,90%) 47%, 
     hsl(0,0%,78%) 53%,
     hsl(0,0%,70%)100%);  /* From: https://simurai.com/lab/2011/08/21/brushed-metal*/
+}
+
+.font-surfer {
+    font-family: 'Original Surfer', cursive;
 }
 
 /*-------------------Media-Queries----*/
