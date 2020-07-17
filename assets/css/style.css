@@ -28,6 +28,7 @@ body {
 .instruction-header {
     color: whitesmoke;
     text-align: center;
+    font-size: large;
 }
 
 /*-------------------Game-Container----*/
@@ -37,7 +38,6 @@ body {
   margin: auto;
   padding-right: 0;
   background-color: #3b3535;
- /* background-image: linear-gradient(315deg, #000000 5%, #414141 74%); /*https://www.eggradients.com/category/metal-gradient*/ 
   border: 2px solid grey;
   border-radius: 5px;
   overflow: hidden;
@@ -49,12 +49,11 @@ body {
   padding: 5px;
   background-color: transparent;
   border-bottom: 3px black solid;
-  
 }
 
 .control-button {
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   margin: 2px;
   border-radius: 30%;
   font-family: 'Original Surfer', cursive;
@@ -118,10 +117,11 @@ body {
     top: 0;
 }
 
-.light-display-row {
-    align-items: center;
+.ld-block {
+    display: inline-block;
+    margin: 2px;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .name {
@@ -130,7 +130,6 @@ body {
 }
 
 .light {
-    position: absolute;
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -148,10 +147,10 @@ body {
     background-color: red;
 }
 
+/*-------------------Mute light----*/
+
 .mute-container {
-    position: absolute;
-    top: 0;
-    right: -26px;
+    display: inline-block;
 }
 
 /*-------------------Game Stick----*/
@@ -166,15 +165,17 @@ body {
 }
 
 .stick {
-     width: 70px;
+    width: 70px;
     height: 70px;
     margin-top: 2%;
     border-radius: 50%;
     background-color: crimson;
+    border: 2px solid black;
     box-shadow: 5px 5px 2px black;
     text-align: center;
-    line-height: 70px;
+    line-height: 75px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*-------------------Game-Buttons----*/
@@ -235,6 +236,16 @@ body {
     hsl(0,0%,70%)100%);  /* From: https://simurai.com/lab/2011/08/21/brushed-metal*/
 }
 
+.outline {
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+/*-------------------Fonts----*/
+
 .font-surfer {
     font-family: 'Original Surfer', cursive;
 }
@@ -273,12 +284,13 @@ body {
 /*----laptop-small----*/
 @media only screen and (min-width: 1024px) {
     .control-top {
-    height: 70px;
+    height: 60px;
     padding: 5px;
 }
 
     .control-button {
-    margin: 5px;
+    padding: 0 10px;
+    margin: 0 5px;
 }
 
     .round-count {
@@ -296,13 +308,13 @@ body {
 }
 
     .base {
-    width: 320px;
-    height: 320px;
+    width: 310px;
+    height: 310px;
 }
 
   .game-button {
-    width: 155px;
-    height: 155px;  
+    width: 152px;
+    height: 152px;  
 }
 
   .stick-base {

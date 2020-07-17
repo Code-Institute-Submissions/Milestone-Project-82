@@ -41,10 +41,12 @@
   <body>
     <!-----------------------Game Title----->
 
-    <div class="game-title font-surfer">Simon Memory Game</div>
-    <div class="instruction-header font-surfer">Press <i class="fas fa-book-open"></i> for instructions</div>
+    <div class="game-title font-surfer outline">Simon Memory Game</div>
+    <div class="instruction-header font-surfer outline">
+      Press <i class="fas fa-book-open"></i> for instructions
+    </div>
 
-<!-----------------------Rules Modal----->
+    <!-----------------------Rules Modal----->
 
     <div
       class="modal fade"
@@ -68,44 +70,52 @@
             </button>
           </div>
           <div class="modal-body bg-dark text-light">
-          <h3>Buttons:</h3>
-           <span><i class="fas fa-power-off"></i> : Power Switch</span><br>
-           <span><i class="fas fa-sync-alt"></i> : Strict mode - This will send you back to start with any wrong guesses.</span><br>
-           <span><i class="fas fa-volume-up"></i> : Mute Button</span><br>
-           <span><span class="font-surfer">START : Start button</span></span><br>
-           <br>
-           <h3>How to play:</h3>
-           <p>1. Hit the Power switch to turn on the game, you can then decide if want to play in 
-           strict mode or not.<br>
-           2. Press the <span class="font-surfer">START</span> button to begin the game and Simon 
-           will give the first signal. Repeat the signal by pressing the same colour button.<br>
-           3. Simon will duplicate the first signal and then add one. Repeat the two signals
-           by pressing the same colour buttons, in order.<br>
-           4. Simon will duplicate the first two signals and add one.<br>
-           5. Continue playing as long as you can repeat each sequence correctly.</p><br>
-           <h3>How to win:</h3>
-           <p>Make it to round 20 and you WIN!</p>
-           <!---instructions from https://www.hasbro.com/common/instruct/Simon.PDF-->
-          </div>
+            <h3>Buttons:</h3>
+            <span><i class="fas fa-power-off"></i> : Power Switch</span><br />
+            <span
+              ><i class="fas fa-sync-alt"></i> : Strict mode - This will send
+              you back to start with any wrong guesses.</span
+            ><br />
+            <span><i class="fas fa-volume-up"></i> : Mute Button</span><br />
+            <span><span class="font-surfer">START : Start button</span></span
+            ><br />
+            <br />
+            <h3>How to play:</h3>
+            <p>
+              1. Hit the Power switch to turn on the game, you can then decide
+              if want to play in strict mode or not.<br />
+              2. Press the <span class="font-surfer">START</span> button to
+              begin the game and Simon will give the first signal. Repeat the
+              signal by pressing the same colour button.<br />
+              3. Simon will duplicate the first signal and then add one. Repeat
+              the two signals by pressing the same colour buttons, in order.<br />
+              4. Simon will duplicate the first two signals and add one.<br />
+              5. Continue playing as long as you can repeat each sequence
+              correctly.
+            </p>
+            <br />
+            <h3>How to win:</h3>
+            <p>Make it to round 20 and you WIN!</p>
+            <!---instructions from https://www.hasbro.com/common/instruct/Simon.PDF-->
           </div>
         </div>
       </div>
+    </div>
 
     <!-----------------------Game-Container----->
 
     <div class="container-sm outer">
-
       <!-----------------------Control-Buttons----->
 
       <div class="row control-top">
         <button class="btn btn-sm control-button metallic" id="power">
-          <i class="fas fa-power-off"></i>
+          <i class="fas fa-power-off fa-lg"></i>
         </button>
         <button class="btn btn-sm control-button metallic" id="strict">
-          <i class="fas fa-sync-alt"></i>
+          <i class="fas fa-sync-alt fa-lg"></i>
         </button>
         <button class="btn btn-sm control-button metallic" id="mute">
-          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-volume-up fa-lg"></i>
         </button>
         <button
           class="btn btn-sm control-button metallic"
@@ -113,7 +123,7 @@
           data-toggle="modal"
           data-target="#rules-modal"
         >
-          <i class="fas fa-book-open"></i>
+          <i class="fas fa-book-open fa-lg"></i>
         </button>
         <div class="round-count-display">
           <div class="round-count font-surfer">ROUND:</div>
@@ -126,17 +136,17 @@
       <div class="row game-field">
         <div class="col-md-4 c-left">
           <div class="light-display">
-            <div class="">
+            <div class="ld-block">
               <div class="name font-surfer">ON</div>
               <div class="light lightOff" id="onLight">&nbsp;</div>
-              <div class="mute-container">
-                <div class="name"><i class="fas fa-volume-mute"></i></div>
-                <div class="light lightOff" id="muteLight">&nbsp;</div>
-              </div>
             </div>
-            <div>
+            <div class="ld-block">
               <div class="name font-surfer">Strict</div>
               <div class="light lightOff" id="strictLight">&nbsp;</div>
+            </div>
+            <div class="ld-block">
+              <div class="name"><i class="fas fa-volume-mute"></i></div>
+              <div class="light lightOff" id="muteLight">&nbsp;</div>
             </div>
           </div>
           <div class="align-middle stick-base">
