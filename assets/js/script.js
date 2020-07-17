@@ -62,7 +62,10 @@ onButton.addEventListener('click', (event) => {
         on = true;
         turnCounter.innerHTML = '-';  
         onLight.classList.add('lightOn');
-        flashAllColors();
+        flashColor();
+        setTimeout(() => {
+            clearColor()
+        }, 400)
     } else {
         on = false;
         turnCounter.innerHTML = '';
@@ -127,28 +130,28 @@ function one() {
     if (mute == false) {
         audio1.play();
     }
-    buttonTop.style.backgroundColor = '#ff9980';
+    buttonTop.style.backgroundColor = '#ffffff';
 }
 
 function two() {
     if (mute == false) {
         audio2.play();
     }
-    buttonLeft.style.backgroundColor = '#66ff66';
+    buttonLeft.style.backgroundColor = '#ffffff';
 }
 
 function three() {
     if (mute == false) {
         audio3.play();
     }
-    buttonRight.style.backgroundColor = '#6666ff';
+    buttonRight.style.backgroundColor = '#ffffff';
 }
 
 function four() {
     if (mute == false) {
         audio4.play();
     }
-    buttonBottom.style.backgroundColor = '#ffff99';
+    buttonBottom.style.backgroundColor = '#ffffff';
 }
 
  /*------------------------------Returns button colour to normal--*/
@@ -161,24 +164,24 @@ function clearColor() {
 
 /*------------------------------Flashes buttons in order--*/
 function flashAllColors() {
-    buttonTop.style.backgroundColor = '#ff9980';
+    buttonTop.style.backgroundColor = '#ffffff';
     if (mute == false) {
         audio1.play();
     }
     setTimeout(function() {
-        buttonLeft.style.backgroundColor = '#66ff66';;
+        buttonLeft.style.backgroundColor = '#ffffff';;
         if (mute == false) {
         audio2.play();
     }
     }, 300);
     setTimeout(function() {
-        buttonBottom.style.backgroundColor = '#ffff99';
+        buttonBottom.style.backgroundColor = '#ffffff';
         if (mute == false) {
         audio4.play();
     }
     }, 500);
     setTimeout(function() {
-        buttonRight.style.backgroundColor = '#6666ff';
+        buttonRight.style.backgroundColor = '#ffffff';
         if (mute == false) {
         audio3.play();
     }
@@ -191,10 +194,10 @@ function flashAllColors() {
 /*------------------------------Flashes all buttons--*/
 
 function flashColor() {
-    buttonTop.style.backgroundColor = '#ff9980';
-    buttonLeft.style.backgroundColor = '#66ff66';
-    buttonRight.style.backgroundColor = '#6666ff';
-    buttonBottom.style.backgroundColor = '#ffff99';
+    buttonTop.style.backgroundColor = '#ffffff';
+    buttonLeft.style.backgroundColor = '#ffffff';
+    buttonRight.style.backgroundColor = '#ffffff';
+    buttonBottom.style.backgroundColor = '#ffffff';
 }
 
 /*--------------------------------------------------------Clickable buttons--*/
