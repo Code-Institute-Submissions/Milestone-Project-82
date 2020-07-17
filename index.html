@@ -41,7 +41,8 @@
   <body>
     <!-----------------------Game Title----->
 
-    <div class="game-title">Simon Memory Game</div>
+    <div class="game-title font-surfer">Simon Memory Game</div>
+    <div class="instruction-header font-surfer">Press <i class="fas fa-book-open"></i> for instructions</div>
 
 <!-----------------------Rules Modal----->
 
@@ -67,12 +68,24 @@
             </button>
           </div>
           <div class="modal-body bg-dark text-light">
+          <h3>Buttons:</h3>
            <span><i class="fas fa-power-off"></i> : Power Switch</span><br>
            <span><i class="fas fa-sync-alt"></i> : Strict mode - This will send you back to start with any wrong guesses.</span><br>
            <span><i class="fas fa-volume-up"></i> : Mute Button</span><br>
-           <span><i class="fas fa-play-circle"></i> : Play Button</span><br>
+           <span><span class="font-surfer">START : Start button</span></span><br>
            <br>
-           <p>Try to match the order of the colours, if you get to round 20 you WIN!</p>
+           <h3>How to play:</h3>
+           <p>1. Hit the Power switch to turn on the game, you can then decide if want to play in 
+           strict mode or not.<br>
+           2. Press the <span class="font-surfer">START</span> button to begin the game and Simon 
+           will give the first signal. Repeat the signal by pressing the same colour button.<br>
+           3. Simon will duplicate the first signal and then add one. Repeat the two signals
+           by pressing the same colour buttons, in order.<br>
+           4. Simon will duplicate the first two signals and add one.<br>
+           5. Continue playing as long as you can repeat each sequence correctly.</p><br>
+           <h3>How to win:</h3>
+           <p>Make it to round 20 and you WIN!</p>
+           <!---instructions from https://www.hasbro.com/common/instruct/Simon.PDF-->
           </div>
           </div>
         </div>
@@ -94,9 +107,6 @@
         <button class="btn btn-sm control-button metallic" id="mute">
           <i class="fas fa-volume-up"></i>
         </button>
-        <button class="btn btn-sm control-button metallic" id="start">
-          <i class="fas fa-play-circle"></i>
-        </button>
         <button
           class="btn btn-sm control-button metallic"
           id="rules"
@@ -106,7 +116,7 @@
           <i class="fas fa-book-open"></i>
         </button>
         <div class="round-count-display">
-          <div class="round-count">ROUND:</div>
+          <div class="round-count font-surfer">ROUND:</div>
           <div class="counter" id="counter"></div>
         </div>
       </div>
@@ -117,7 +127,7 @@
         <div class="col-md-4 c-left">
           <div class="light-display">
             <div class="">
-              <div class="name">ON</div>
+              <div class="name font-surfer">ON</div>
               <div class="light lightOff" id="onLight">&nbsp;</div>
               <div class="mute-container">
                 <div class="name"><i class="fas fa-volume-mute"></i></div>
@@ -125,12 +135,12 @@
               </div>
             </div>
             <div>
-              <div class="name">Strict</div>
+              <div class="name font-surfer">Strict</div>
               <div class="light lightOff" id="strictLight">&nbsp;</div>
             </div>
           </div>
           <div class="align-middle stick-base">
-            <div class="stick"></div>
+            <div class="stick font-surfer" id="start">START</div>
           </div>
         </div>
 
