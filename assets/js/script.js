@@ -66,7 +66,7 @@ onButton.addEventListener('click', (event) => {
         setTimeout(() => {
             clearColor()
         }, 400)
-    } else {
+    } else if (on == true) {
         on = false;
         turnCounter.innerHTML = '';
         onLight.classList.remove('lightOn');
