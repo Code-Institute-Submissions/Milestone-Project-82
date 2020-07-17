@@ -1,39 +1,43 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Simon Memory Game
+### Interactive Front-end Milestone Project
+    A memory game based on the popular Simon game, made with HTML, CSS and JS and with
+    the aesthetic of an arcade stick.
+### UX 
+    ![UX Image](assets/images/Simon-game-UX.png)
+### Users
+    Expected users of this website include anyone with some time to challenge
+    their memory, possibly also other students that are learning to code.
+### User Stories
+### Design
+### Mockups
+    *<a src="assets/images/Simon%20Wireframe.png">Figma mockup</a>
+<h3>Features</h3>
+<h4>Planned Features</h4>
+    <ul>
+        <li>Documentation - README file, Mockup</li>
+        <li>Responsive Design - Mobile first</li>
+        <li>Bootstrap - HTML and Components</li>
+        <li>UX elements - Animations</li>
+        <li>Colour scheme</li>
+        <li>Jasmine testing</li>
+        <li>Git - Version Control System</li>
+        <li>GitHub - Remote Repository</li>
+        <li>Deployed - Hosted on GitHub pages</li>
+    </ul>
+<h4>Existing Features</h4>
+    <ul>  
+        <li>Documentation - README file, Mockup</li>
+        <li>Responsive Design - Mobile first</li>
+        <li>Bootstrap - HTML and Components</li>
+        <li>UX elements - Animations</li>
+        <li>Colour scheme</li>
+        <!--<li>Jasmine testing</li>-->
+        <li>Git - Version Control System</li>
+        <li>GitHub - Remote Repository</li>
+        <!--<li>Deployed - Hosted on GitHub pages</li>-->
+    </ul>
+<h3>Technologies Used</h3>
 
-Welcome James-Stewart110,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+<h3>Testing</h3>
+<h3>Deployment</h3>
+<h3>Credits</h3>
