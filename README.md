@@ -16,6 +16,7 @@ Expected users of this website include anyone with some time to challenge
 ### Design ###
 
 ### Mockups ###
+*  <a src="assets/images/SimonWireframe.png">Figma mockup</a>
 * <a src="assets/images/SimonWireframe.png">Figma mockup</a>
 
 ### Features ###
@@ -23,28 +24,27 @@ Expected users of this website include anyone with some time to challenge
 * Documentation
     * README file
     * Mockup
-* Responsive Design - Mobile first
+* Way to lock screen to landscape
 * Bootstrap - HTML and Components
-* UX elements
-    * Animations
 * Colour scheme
+* Responsive Design - Mobile first
 * Jasmine testing
 * Git - Version Control System
 * GitHub - Remote Repository
+* Gitpod - Code editor
 * Deployed - Hosted on GitHub pages
 
-#### Existing Features ####
+#### Implimented Features ####
 * Documentation
     * README file
     * Mockup
-* Responsive Design - Mobile first
 * Bootstrap - HTML and Components
-* UX elements
-    * Animations
 * Colour scheme
+* Responsive Design - Mobile first
 <!--* Jasmine testing-->
 * Git - Version Control System
 * GitHub - Remote Repository
+* Gitpod - Code editor
 <!--* Deployed - Hosted on GitHub pages-->
 
 ### Technologies Used ###
@@ -73,11 +73,64 @@ Expected users of this website include anyone with some time to challenge
     * Font Awesome for button icons
 * <a src="http://ami.responsivedesign.is/">Am I Responsive</a>
     * Used to check responsiveness over mutiple screen sizes
+* <a src="http://figma.com/">Figma.com</a>
+    * Figma for creating mockups
 <!--* <a src="https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)">Jasmine Testing</a>
     * Jasmine used to test JS code-->
 
 ### Testing ###
+#### Manual Testing ####
+* Chrome Dev Tool
+    * This project was manually tested by me and my family using chrome dev tools.
+* Mobile
+    * Responsiveness - This project was made with mobile first development in mind so was continually tested throughout development.
+    * Buttons - Cannot press any buttons ( apart from how to play ) while game is off, once on all buttons work correctly.
+    * Display 
+        * Mobile(min-width < 375px) Icons appear correctly on the control buttons and the instructions heading appears to direct 
+        players to it.
+        * Mobile(min-width > 375px) The contents of the how to play button are replaced with 'How To Play' correctly and the 
+        instructions heading disappears. The size of the display lights also increases.
+* Tablet
+    * Responsiveness - Game becomes 70% of viewport width and 80% height taking up most of the screen.
+    * Buttons - All buttons tested mutiple times throughout several games.
+    * Display - Strict button icon replaced with 'STRICT'.
+* Laptop
+    * Responsiveness -  Game becomes 70% of viewport width and 80% height taking up most of the screen.
+    * Buttons - All buttons tested mutiple times throughout several games.
+    * Display - START  button and the coloured play buttons increase in size to fit larger container
+* Desktop
+    * Responsiveness -  Game becomes 70% of viewport width and 80% height taking up most of the screen.
+    * Buttons - All buttons tested mutiple times throughout several games.
+    * Display - START  button and the coloured play buttons increase in size to fit larger container
 ### Deployment ###
+The live site is deployed on <a href="#">GitHub pages.</a>
+
+The process involved:
+
+- Host a git repository on GitHub. <a src="https://kbroman.org/github_tutorial/pages/init.html">Explained here</a>.<br>
+- The root folder contains README.md and index.html files<br>
+- On GitHub repository settings page move to GitHub Pages section<br>
+- Change source to master branch. (Or any desired branch)<br>
+- Provided link will be your projects home (index) page.<br>
+
+To deploy your own version of the website:<br>
+
+- Have git installed<br>
+- Visit the repository<br>
+- Click 'Clone or download' and copy the code for http<br>
+- Open your chosen IDE (Gitpod, VS Code, etc.)<br>
+- Open a terminal in your root directory<br>
+- Type 'git clone ' followed by the code taken from github repository<br>
+  - git clone https://github.com/James-Stewart110/milestone-project-2.git<br>
+- When this completes you have your own version of the website<br>
+- The website can be run by opening one of the HTML files within a web browser<br>
+- Visit the link provided<br>
+- Your website with any made changes will appear<br>
+- Saved changes to the website will appear here after refreshing the page<br>
+- The benefits of hosting your website on GitHub pages is that any pushed changes to your project will automatically update the website. Development branches can be created and merged to the master when complete.<br>
+
+It may take a moment for changes to appear on the hosted website.<br>
+
 ### Credits ###
 * <a src="https://www.freecodecamp.org/">freecodecamp.org</a>
     * As this was my first project with JS, with the limited knowledge i have
@@ -89,3 +142,7 @@ Expected users of this website include anyone with some time to challenge
     * Background from subtlepatterns.org
 * <a src="https://simurai.com/lab/2011/08/21/brushed-metal">Metallic background for buttons</a>
 
+### Acknowledgements ###
+Thanks to:
+* <a href="https://www.linkedin.com/in/oluwaseun-owonikoko-190318135/" target="_blank">Owonikoko Oluwaseun</a>
+* Code Institue
