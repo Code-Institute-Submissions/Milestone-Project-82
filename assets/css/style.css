@@ -7,7 +7,7 @@ body html {
 }
 
 body {
-    background-image: url(../images/grey_wash_wall.png) /*https://www.toptal.com/designers/subtlepatterns/?s=grey*/
+    background-image: url(../images/tileable_wood_texture.png) 
 }
 
 .inline {
@@ -58,6 +58,16 @@ body {
   border-radius: 30%;
   font-family: 'Original Surfer', cursive;
   font-size: x-small;
+}
+
+/*-------------------Strict Button Text----*/
+.strict-text {
+    display: none;
+}
+
+/*-------------------Rules Button text----*/
+.htp-text {
+    display: none;
 }
 
 /*-------------------Round counter----*/
@@ -115,13 +125,15 @@ body {
 .light-display {
     position: absolute;
     top: 0;
+    font-size: small;
 }
 
 .ld-block {
     display: inline-block;
-    margin: 2px;
     justify-content: center;
     align-items: center;
+    margin: 2px;
+    padding: 5px;
 }
 
 .name {
@@ -130,13 +142,11 @@ body {
 }
 
 .light {
-    display: inline-block;
     width: 10px;
     height: 10px;
-    margin-left: 5px;
-    margin-top: 8px;
+    box-shadow: black 1px 1px 1px;
+    margin: 8px auto 0px;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px black;
 }
 
 .lightOff {
@@ -145,12 +155,6 @@ body {
 
 .lightOn {
     background-color: red;
-}
-
-/*-------------------Mute light----*/
-
-.mute-container {
-    display: inline-block;
 }
 
 /*-------------------Game Stick----*/
@@ -173,7 +177,7 @@ body {
     border: 2px solid black;
     box-shadow: 5px 5px 2px black;
     text-align: center;
-    line-height: 75px;
+    line-height: 65px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -252,8 +256,8 @@ body {
 
 /*-------------------Media-Queries----*/
 
-/*----mobile-large----*/
-@media only screen and (min-width: 425px) {
+/*----mobile-medium----*/
+@media only screen and (min-width: 375px) {
   .base {
     width: 150px;
     height: 150px;
@@ -261,9 +265,29 @@ body {
     margin-top: -5px;
   }
 
+    .strict-text {
+      display: inline;
+  }
+
+    .fa-sync-alt {
+        display: none;
+    }
+
+    .htp-text {
+      display: inline;
+  }
+
+    .fa-book-open {
+      display: none;
+  }
+
   .game-button {
   width: 72px;
   height: 72px;  
+}
+
+.light-display {
+    font-size: large;
 }
 
 /*----tablet----*/
@@ -325,6 +349,7 @@ body {
   .stick {
     width: 90px;
     height: 90px;
+    line-height: 65px;
   }
 }
 
