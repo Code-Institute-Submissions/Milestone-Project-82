@@ -34,7 +34,7 @@ const audio4 = document.getElementById('audio4');
 
 /*-------------------------------------------Strict mode on/off--*/
 strictButton.addEventListener('click', (event) => {
-    if (strict == false) {
+    if (on == true && strict == false) {
         strict = true;
         strictLight.classList.add('lightOn');
     } else {
@@ -46,7 +46,7 @@ strictButton.addEventListener('click', (event) => {
 
 /*-------------------------------------------Mute on/off--*/
 muteButton.addEventListener('click', (event) => {
-    if (mute == false) {
+    if (on == true && mute == false) {
         mute = true;
         muteLight.classList.add('lightOn');
     } else {
@@ -68,9 +68,13 @@ onButton.addEventListener('click', (event) => {
         }, 400)
     } else if (on == true) {
         on = false;
+        strict = false;
+        mute = false
         turnCounter.innerHTML = '';
         onLight.classList.remove('lightOn');
         onLight.classList.add('lightOff');
+        muteLight.classList.remove('lightOn');
+        strictLight.classList.remove('lightOn');
         clearColor();
         clearInterval(intervalId);
     }
@@ -294,7 +298,7 @@ function resetPlayerTurn() {
     intervalId = setInterval(gameTurn, 800);
 }
 
-/*------------------------------Game has been won! Restarts for another shot--*/
+/*------------------------------Game has been won!--*/
 
 function winGame() {
     flashColor();

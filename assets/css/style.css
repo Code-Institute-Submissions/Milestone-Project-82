@@ -57,7 +57,7 @@ body {
   margin: 2px;
   border-radius: 30%;
   font-family: 'Original Surfer', cursive;
-  font-size: x-small;
+  font-size: medium;
 }
 
 /*-------------------Strict Button Text----*/
@@ -186,7 +186,7 @@ body {
 .base {
   position: relative;
   left: -10px;
-  top: -10px;
+  top: -15px;
   width: 140px;
   height: 140px;
   margin: 0 auto;
@@ -258,18 +258,27 @@ body {
 
 /*----mobile-medium----*/
 @media only screen and (min-width: 375px) {
+     .instruction-header {
+      display: none;
+  }
+
   .base {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     margin-top: -5px;
+    top: -10px;
+  }
+
+  .control-button {
+      font-size: x-small;
   }
 
     .strict-text {
       display: inline;
   }
 
-    .fa-sync-alt {
+    .str-icon {
         display: none;
     }
 
@@ -292,16 +301,17 @@ body {
 
 /*----tablet----*/
 @media only screen and (min-width: 768px) {
-  .outer {
-  position: relative;
-  height: 80vh;
-  width: 70vw;
-  margin: auto;
-  box-shadow: 10px 10px 5px black;
+    .game-title {
+      font-size: xx-large;
+      margin-bottom: 15px;
   }
 
-  .game-title {
-      font-size: xx-large;
+    .outer {
+    position: relative;
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+    box-shadow: 10px 10px 5px black;
   }
 }
 
@@ -315,6 +325,7 @@ body {
     .control-button {
     padding: 0 10px;
     margin: 0 5px;
+    font-size: medium;
 }
 
     .round-count {
@@ -349,7 +360,7 @@ body {
   .stick {
     width: 90px;
     height: 90px;
-    line-height: 65px;
+    line-height: 80px;
   }
 }
 
