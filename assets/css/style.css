@@ -18,15 +18,15 @@ body {
 .game-title {
   width: 100%;
   height: 10vh;
-  color: whitesmoke;
+  color: black;
   text-align: center;
   font-size: x-large;
   margin-top: 2vh;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .instruction-header {
-    color: whitesmoke;
+    color: black;
     text-align: center;
     font-size: large;
 }
@@ -227,6 +227,15 @@ body {
   right: 0;
 }
 
+/*-------------------Footer----*/
+.footer {
+    bottom: -2px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+    font-size: small;
+}
+
 /*-------------------Colours----*/
 
 .metallic {
@@ -242,10 +251,10 @@ body {
 
 .outline {
     text-shadow:
-        0.07em 0 black,
-        0 0.07em black,
-        -0.07em 0 black,
-        0 -0.07em black;
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
 }
 
 /*-------------------Fonts----*/
@@ -311,8 +320,12 @@ body {
     height: 80vh;
     width: 70vw;
     margin: auto;
-    box-shadow: 10px 10px 5px black;
   }
+
+  .light {
+    width: 20px;
+    height: 20px;
+}
 }
 
 /*----laptop-small----*/
