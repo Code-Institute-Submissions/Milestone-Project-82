@@ -2,24 +2,31 @@
 ### Interactive Front-End Milestone Project - Code Institue ###
 
 A memory game based on the popular Simon game, made with HTML, CSS and JS and with
-the aesthetic of an arcade stick.
-
+the aesthetic of an arcade stick.This game is build to be played in landscape mode on devices. I
+have been experimenting with a way to only load the website in landscape but have not implimented
+that function yet.
 ### UX ### 
-<img src="assets/images/Simon-game-UX.png">
-
+![UX display](assets/images/simon-game-ux.png)
 ### Users ###
 Expected users of this website include anyone with some time to challenge
 their memory, possibly also other students that are learning to code.
 
 ### User Stories ###
-1. The first user of this game would miss the power switch and try to start the game,
+1. The first user of this game missed the power switch and tried to start the game,
 they wanted the instructions to be clearer so that the game was easier to understand.
-2. 
+2. Another user of the game enjoyed the functionality but found the sound effects to become
+tedious after prolonged use, they wanted to have the choice to turn off sound.
+
 ### Design ###
+* Overall Design
+    * The design of this game is based on a arcade stick. I chose this design as i am a big fan of the retro style and
+    and i belive its an original design.
+* Background
+    * Wooden background, nice contrast from main body, meant to simulate a tabletop.
 
 ### Mockups ###
-*  <a src="assets/images/SimonWireframe.png">Figma mockup</a>
-* <a src="https://www.figma.com/file/gx5vF479DgluyrWyXAh3Dt/Untitled?node-id=0%3A1">Figma mockup mobile</a>
+* [Mobile](https://www.figma.com/file/gx5vF479DgluyrWyXAh3Dt/Untitled?node-id=0%3A1)
+* [Laptop](https://www.figma.com/file/1zp1vfMXCdszE00pfBrUZx/Simon-Wireframe?node-id=0%3A1)
 
 ### Features ###
 #### Planned Features ####
@@ -52,34 +59,34 @@ they wanted the instructions to be clearer so that the game was easier to unders
 
 ### Technologies Used ###
 
-* <a src="https://www.w3schools.com/html/">HTML</a>
+* [HTML](https://www.w3schools.com/html/)
     * HTML for core structure
-* <a src="https://www.w3schools.com/css/">CSS</a>
+* [CSS](https://www.w3schools.com/css/)
     * CSS for Styling
-* <a src="https://www.w3schools.com/js/default.asp">JS</a> 
+* [JS](https://www.w3schools.com/js/default.asp)
     * JS for programming behavior
-* <a src="https://github.com/">Github</a>
+* [Github](https://github.com/)
     * Github for hosting Repositories
-* <a src="https://pages.github.com/">Github Pages</a>
+* [Github pages](https://pages.github.com/)
     * Github Pages for hosting deployed website
-* <a src="https://www.gitpod.io/">Gitpod</a>
+* [Gitpod](https://www.gitpod.io/)
     * Gitpod for writing and editing code
-* <a src="https://www.google.com/">Google</a>
+* [Google](https://www.google.com/)
     * Google used for research
-* <a src="https://www.google.co.uk/chrome/?brand=CHBD&gclid=CjwKCAjwmMX4BRAAEiwA-zM4JtckdMsWqMj45TMg2IdTSsaqZ5cnBYjWqGPGPgjICIwBtUYuaLbFrhoC4bwQAvD_BwE&gclsrc=aw.ds">Google Chrome Dev tools</a>
+* [Chrome Dev Tools](https://www.google.co.uk/chrome/?brand=CHBD&gclid=CjwKCAjwmMX4BRAAEiwA-zM4JtckdMsWqMj45TMg2IdTSsaqZ5cnBYjWqGPGPgjICIwBtUYuaLbFrhoC4bwQAvD_BwE&gclsrc=aw.ds)
     * Google Chrome Dev tools for checking and real-time editing code
-* <a src="https://fonts.google.com/">Google Fonts</a>
+* [Google Fonts](https://fonts.google.com/)
     * Font stylings
-* <a src="https://getbootstrap.com/docs/4.5/getting-started/introduction/">Bootstrap</a>
+* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     * Bootstrap for HTML and CSS framework
-* <a src="https://fontawesome.com/">Font Awesome</a>
+* [Font Awesome](https://fontawesome.com/)
     * Font Awesome for button icons
-* <a src="http://ami.responsivedesign.is/">Am I Responsive</a>
+* [Am I Responsive](http://ami.responsivedesign.is/)
     * Used to check responsiveness over mutiple screen sizes
-* <a src="http://figma.com/">Figma.com</a>
+* [Figma](http://figma.com/)
     * Figma for creating mockups
-* <a src="https://www.w3schools.com/">w3schools</a>
-    * w3school.com for tutorials and HTML colour picker
+* [W3school](https://www.w3schools.com/)
+    * w3schools for tutorials and HTML colour picker
 <!--* <a src="https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)">Jasmine Testing</a>
     * Jasmine used to test JS code-->
 
@@ -87,32 +94,35 @@ they wanted the instructions to be clearer so that the game was easier to unders
 #### Manual Testing ####
 * Chrome Dev Tool
     * This project was manually tested by me and my family using chrome dev tools at each standard screen size.
+    * Responsive Design - The look of the game does not change much between screen sizes, only the icons appearing
+    on mobile and the game buttons getting bigger for larger screens.
 * Mobile
     * Responsiveness - This project was made with mobile first development in mind so was continually tested throughout development.
     * Buttons - Cannot press any buttons ( apart from how to play ) while game is off, once on all buttons work correctly.
     * Display 
         * Mobile(min-width < 375px) Icons appear correctly on the control buttons and the instructions heading appears to direct 
         players to it.
-        * Mobile(min-width > 375px) The contents of the how to play button are replaced with 'How To Play' correctly and the 
+        * Mobile(min-width > 375px) The icon of the how to play button are replaced with 'How To Play' correctly and the 
         instructions heading disappears. The size of the display lights also increases.
 * Tablet
     * Responsiveness - Game becomes 70% of viewport width and 80% height taking up most of the screen.
-    * Buttons - All buttons tested mutiple times throughout several games.
+    * Buttons - Cannot press any buttons ( apart from how to play ) while game is off, once on all buttons work correctly.
     * Display - Strict button icon replaced with 'STRICT'.
 * Laptop
     * Responsiveness -  Game becomes 70% of viewport width and 80% height taking up most of the screen.
-    * Buttons - All buttons tested mutiple times throughout several games.
-    * Display - START  button and the coloured play buttons increase in size to fit larger container
+    * Buttons - Cannot press any buttons ( apart from how to play ) while game is off, once on all buttons work correctly.
+    * Display - START  button and the coloured play buttons increase in size to fit larger container.
 * Desktop
     * Responsiveness -  Game becomes 70% of viewport width and 80% height taking up most of the screen.
-    * Buttons - All buttons tested mutiple times throughout several games.
-    * Display - START  button and the coloured play buttons increase in size to fit larger container
+    * Buttons - Cannot press any buttons ( apart from how to play ) while game is off, once on all buttons work correctly.
+    * Display - START  button and the coloured play buttons increase in size to fit larger container.
+
 ### Deployment ###
-The live site is deployed on <a href="#">GitHub pages.</a>
+The live site is deployed on [GitHub pages](#).</a>
 
 The process involved:
 
-- Host a git repository on GitHub. <a src="https://kbroman.org/github_tutorial/pages/init.html">Explained here</a>.<br>
+- Host a git repository on GitHub. [Explained here](https://kbroman.org/github_tutorial/pages/init.html).<br>
 - The root folder contains README.md and index.html files<br>
 - On GitHub repository settings page move to GitHub Pages section<br>
 - Change source to master branch. (Or any desired branch)<br>
@@ -137,17 +147,20 @@ To deploy your own version of the website:<br>
 It may take a moment for changes to appear on the hosted website.<br>
 
 ### Credits ###
-* <a src="https://www.freecodecamp.org/">freecodecamp.org</a>
+* [Freecodecamp](https://www.freecodecamp.org/)
     * As this was my first project with JS, with the limited knowledge i have
     on the subject and also having learned to not try to re-invent the wheel, i decided
     to use code available to me online and fit it to my needs.
-* <a src="https://www.hasbro.com/common/instruct/Simon.PDF">Instructions</a>
+* [Instructions](https://www.hasbro.com/common/instruct/Simon.PDF)
     * Instructions from hasbro website
-* <a src="https://www.toptal.com/designers/subtlepatterns/?s=grey">Background</a>
-    * Background from subtlepatterns.org
-* <a src="https://simurai.com/lab/2011/08/21/brushed-metal">Metallic background for buttons</a>
+* [Background](https://www.toptal.com/designers/subtlepatterns/)
+    * Background from subtlepatterns
+* [Metallic background for buttons](https://simurai.com/lab/2011/08/21/brushed-metal)
+#### Media ####
+* Audio for button sound effects from
+    * [freecodecamp](https://www.freecodecamp.org/)
 
 ### Acknowledgements ###
 Thanks to:
-* <a href="https://www.linkedin.com/in/oluwaseun-owonikoko-190318135/" target="_blank">Owonikoko Oluwaseun</a>
+* [Owonikoko Oluwaseun](https://www.linkedin.com/in/oluwaseun-owonikoko-190318135/)
 * Code Institue
