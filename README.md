@@ -9,15 +9,17 @@ the aesthetic of an arcade stick.
 
 ### Users ###
 Expected users of this website include anyone with some time to challenge
-    their memory, possibly also other students that are learning to code.
+their memory, possibly also other students that are learning to code.
 
 ### User Stories ###
-
+1. The first user of this game would miss the power switch and try to start the game,
+they wanted the instructions to be clearer so that the game was easier to understand.
+2. 
 ### Design ###
 
 ### Mockups ###
 *  <a src="assets/images/SimonWireframe.png">Figma mockup</a>
-* <a src="assets/images/SimonWireframe.png">Figma mockup</a>
+* <a src="https://www.figma.com/file/gx5vF479DgluyrWyXAh3Dt/Untitled?node-id=0%3A1">Figma mockup mobile</a>
 
 ### Features ###
 #### Planned Features ####
@@ -25,8 +27,8 @@ Expected users of this website include anyone with some time to challenge
     * README file
     * Mockup
 * Way to lock screen to landscape
+* Click counter
 * Bootstrap - HTML and Components
-* Colour scheme
 * Responsive Design - Mobile first
 * Jasmine testing
 * Git - Version Control System
@@ -39,12 +41,13 @@ Expected users of this website include anyone with some time to challenge
     * README file
     * Mockup
 * Bootstrap - HTML and Components
-* Colour scheme
 * Responsive Design - Mobile first
-<!--* Jasmine testing-->
 * Git - Version Control System
 * GitHub - Remote Repository
 * Gitpod - Code editor
+<!--* Jasmine testing-->
+<!--* Way to lock screen to landscape-->
+<!--* Click counter-->
 <!--* Deployed - Hosted on GitHub pages-->
 
 ### Technologies Used ###
@@ -75,13 +78,15 @@ Expected users of this website include anyone with some time to challenge
     * Used to check responsiveness over mutiple screen sizes
 * <a src="http://figma.com/">Figma.com</a>
     * Figma for creating mockups
+* <a src="https://www.w3schools.com/">w3schools</a>
+    * w3school.com for tutorials and HTML colour picker
 <!--* <a src="https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)">Jasmine Testing</a>
     * Jasmine used to test JS code-->
 
 ### Testing ###
 #### Manual Testing ####
 * Chrome Dev Tool
-    * This project was manually tested by me and my family using chrome dev tools.
+    * This project was manually tested by me and my family using chrome dev tools at each standard screen size.
 * Mobile
     * Responsiveness - This project was made with mobile first development in mind so was continually tested throughout development.
     * Buttons - Cannot press any buttons ( apart from how to play ) while game is off, once on all buttons work correctly.
