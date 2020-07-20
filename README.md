@@ -4,9 +4,13 @@
 A memory game based on the popular Simon game, made with HTML, CSS and JS and with
 the aesthetic of an arcade stick.This game is build to be played in landscape mode on devices. I
 have been experimenting with a way to only load the website in landscape but have not implimented
-that function yet.
+that function yet.  
+The goal of this project was to show a better understanding of HTML amd CSS
+and an understanding of the basics of JS.
+
 ### UX ### 
 ![UX display](assets/images/simon-game-ux.png)
+
 ### Users ###
 Expected users of this website include anyone with some time to challenge
 their memory, possibly also other students that are learning to code.
@@ -32,7 +36,7 @@ tedious after prolonged use, they wanted to have the choice to turn off sound.
 #### Planned Features ####
 * Documentation
     * README file
-    * Mockup
+    * Mockups
 * Way to lock screen to landscape
 * Click counter
 * Bootstrap - HTML and Components
@@ -46,7 +50,7 @@ tedious after prolonged use, they wanted to have the choice to turn off sound.
 #### Implimented Features ####
 * Documentation
     * README file
-    * Mockup
+    * Mockups
 * Bootstrap - HTML and Components
 * Responsive Design - Mobile first
 * Git - Version Control System
