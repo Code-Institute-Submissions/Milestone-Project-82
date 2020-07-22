@@ -7,7 +7,7 @@ body html {
 }
 
 body {
-	background-image: url(../images/tileable_wood_texture.png)
+	background-image: url(../images/tileable_wood_texture.png);
 }
 
 .inline {
@@ -153,7 +153,7 @@ body {
 
 .name {
 	color: whitesmoke;
-	display: inline-block
+	display: inline-block;
 }
 
 .light {
@@ -225,7 +225,7 @@ body {
 #button-top {
 	background-color: #cc2900;
 	top: 0;
-	left: 0
+	left: 0;
 }
 
 #button-left {
@@ -315,6 +315,7 @@ body {
 	.light-display {
 		font-size: large;
 	}
+}
 	/*----tablet----*/
 	@media only screen and (min-width: 768px) {
 		.game-title {
@@ -373,5 +374,3 @@ body {
 			line-height: 80px;
 		}
 	}
-	/*----laptop-large----*/
-	@media only screen and (min-width: 1440px) {
