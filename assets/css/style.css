@@ -1,382 +1,377 @@
 /*-------------------HTML----*/
 
 body html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 body {
-    background-image: url(../images/tileable_wood_texture.png) 
+	background-image: url(../images/tileable_wood_texture.png)
 }
 
 .inline {
-    display: inline;
+	display: inline;
 }
 
+
 /*-------------------Game-Title----*/
+
 .game-title {
-  width: 100%;
-  height: 10vh;
-  color: black;
-  text-align: center;
-  font-size: x-large;
-  margin-top: 2vh;
-  margin-bottom: 3px;
+	width: 100%;
+	height: 10vh;
+	color: black;
+	text-align: center;
+	font-size: x-large;
+	margin-top: 2vh;
+	margin-bottom: 3px;
 }
 
 .instruction-header {
-    color: black;
-    text-align: center;
-    font-size: large;
+	color: black;
+	text-align: center;
+	font-size: large;
 }
+
 
 /*-------------------Game-Container----*/
+
 .outer {
-  position: relative;
-  height: 80vh;
-  margin: auto;
-  padding-right: 0;
-  background-color: #3b3535;
-  border: 2px solid grey;
-  border-radius: 5px;
-  overflow: hidden;
+	position: relative;
+	height: 80vh;
+	margin: auto;
+	padding-right: 0;
+	background-color: #3b3535;
+	border: 2px solid grey;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
+
 /*-----------------Control-Buttons----*/
+
 .control-top {
-  position: relative;
-  padding: 5px;
-  background-color: transparent;
-  border-bottom: 3px black solid;
+	position: relative;
+	padding: 5px;
+	background-color: transparent;
+	border-bottom: 3px black solid;
 }
 
 .control-button {
-  display: inline-block;
-  padding: 5px;
-  margin: 2px;
-  border-radius: 30%;
-  font-family: 'Original Surfer', cursive;
-  font-size: medium;
+	display: inline-block;
+	padding: 5px;
+	margin: 2px;
+	border-radius: 30%;
+	font-family: 'Original Surfer', cursive;
+	font-size: medium;
 }
+
 
 /*-------------------Strict Button Text----*/
+
 .strict-text {
-    display: none;
+	display: none;
 }
 
+
 /*-------------------Rules Button text----*/
+
 .htp-text {
-    display: none;
+	display: none;
 }
+
 
 /*-------------------Round counter----*/
 
 .round-count-display {
-    position: absolute;
-    display: flex;
-    right: 20px;
+	position: absolute;
+	display: flex;
+	right: 20px;
 }
 
 .round-count {
-    display: inline-block;
-    padding-left: 15px;
-    color: whitesmoke;
+	display: inline-block;
+	padding-left: 15px;
+	color: whitesmoke;
 }
 
 .counter {
-  background: #330000;
-  color: red;
-  border-radius: 30%;
-  display: inline-block;
-  text-align: center;
-  right: 0;
-  margin: 0;
-  margin-left: 8px;
-  height: 30px;
-  width: 40px;
-  overflow: hidden;
+	background: #330000;
+	color: red;
+	border-radius: 30%;
+	display: inline-block;
+	text-align: center;
+	right: 0;
+	margin: 0;
+	margin-left: 8px;
+	height: 30px;
+	width: 40px;
+	overflow: hidden;
 }
 
+
 /*-------------------Game-Buttons-Field----*/
+
 .game-field {
-  height: 100%;
+	height: 100%;
 }
 
 .c-left {
-  height: 90%;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 90%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .c-right {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 90%;
-  width: 60%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 90%;
+	width: 60%;
 }
 
+
 /*-------------------Display lights----*/
+
 .light-display {
-    position: absolute;
-    top: 0;
-    font-size: small;
+	position: absolute;
+	top: 0;
+	font-size: small;
 }
 
 .ld-block {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    padding: 5px;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+	padding: 5px;
 }
 
 .name {
-    color: whitesmoke;
-    display: inline-block
+	color: whitesmoke;
+	display: inline-block
 }
 
 .light {
-    width: 10px;
-    height: 10px;
-    box-shadow: black 1px 1px 1px;
-    margin: 8px auto 0px;
-    border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	box-shadow: black 1px 1px 1px;
+	margin: 8px auto 0px;
+	border-radius: 50%;
 }
 
 .lightOff {
-    background-color: #330000;
+	background-color: #330000;
 }
 
 .lightOn {
-    background-color: red;
+	background-color: red;
 }
+
 
 /*-------------------Game Stick----*/
 
 .stick-base {
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;    /*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
-    background-color: darkslategray;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*--https://www.jakpsatweb.cz/css/css-vertical-center-solution.html--*/
+	background-color: darkslategray;
 }
 
 .stick {
-    width: 70px;
-    height: 70px;
-    margin-top: 2%;
-    border-radius: 50%;
-    background-color: crimson;
-    border: 2px solid black;
-    box-shadow: 5px 5px 2px black;
-    text-align: center;
-    line-height: 65px;
-    font-weight: bold;
-    cursor: pointer;
+	width: 70px;
+	height: 70px;
+	margin-top: 2%;
+	border-radius: 50%;
+	background-color: crimson;
+	border: 2px solid black;
+	box-shadow: 5px 5px 2px black;
+	text-align: center;
+	line-height: 65px;
+	font-weight: bold;
+	cursor: pointer;
 }
 
+
 /*-------------------Game-Buttons----*/
+
 .base {
-  position: relative;
-  left: -10px;
-  top: -15px;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto;
-  margin-top: 2%;
-  transform: rotate(45deg);
+	position: relative;
+	left: -10px;
+	top: -15px;
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+	margin-top: 2%;
+	transform: rotate(45deg);
 }
 
 .game-button {
-  position: absolute;
-  width: 68px;
-  height: 68px;  
-  border-radius: 50%;
-  border: 2px solid black;
-  box-shadow: 7px 7px 5px black;
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	border: 2px solid black;
+	box-shadow: 7px 7px 5px black;
 }
 
 #button-top {
-  background-color: #cc2900;
-  top: 0;
-  left: 0
+	background-color: #cc2900;
+	top: 0;
+	left: 0
 }
 
 #button-left {
-  background-color: #00b300;
-  bottom: 0;
-  left: 0;
+	background-color: #00b300;
+	bottom: 0;
+	left: 0;
 }
 
 #button-right {
-  background-color: #0000cc;
-  top: 0;
-  right: 0;
+	background-color: #0000cc;
+	top: 0;
+	right: 0;
 }
 
 #button-bottom {
-  background-color: #ffcc00;
-  bottom: 0;
-  right: 0;
+	background-color: #ffcc00;
+	bottom: 0;
+	right: 0;
 }
 
+
 /*-------------------Footer----*/
+
 .footer {
-    bottom: -2px;
-    margin: 0 auto;
-    text-align: center;
-    text-decoration: underline;
-    font-size: small;
+	bottom: -2px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: underline;
+	font-size: small;
 }
+
 
 /*-------------------Colours----*/
 
 .metallic {
-    background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
-    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
-    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
-    
-    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
-    hsl(0,0%,90%) 47%, 
-    hsl(0,0%,78%) 53%,
-    hsl(0,0%,70%)100%);  /* From: https://simurai.com/lab/2011/08/21/brushed-metal*/
+	background-image: -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0) 6%, hsla(0, 0%, 100%, .1) 7.5%), -webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 4%, hsla(0, 0%, 0%, .03) 4.5%), -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0) 1.2%, hsla(0, 0%, 100%, .15) 2.2%), linear-gradient(180deg, hsl(0, 0%, 78%) 0%, hsl(0, 0%, 90%) 47%, hsl(0, 0%, 78%) 53%, hsl(0, 0%, 70%)100%);
+	/* From: https://simurai.com/lab/2011/08/21/brushed-metal*/
 }
 
 .outline {
-    text-shadow:
-        0.07em 0 white,
-        0 0.07em white,
-        -0.07em 0 white,
-        0 -0.07em white;
+	text-shadow: 0.07em 0 white, 0 0.07em white, -0.07em 0 white, 0 -0.07em white;
 }
+
 
 /*-------------------Fonts----*/
 
 .font-surfer {
-    font-family: 'Original Surfer', cursive;
+	font-family: 'Original Surfer', cursive;
 }
+
 
 /*-------------------Media-Queries----*/
 
+
 /*----mobile-medium----*/
+
 @media only screen and (min-width: 375px) {
-     .instruction-header {
-      display: none;
-  }
-
-  .base {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    margin-top: -5px;
-    top: -10px;
-  }
-
-  .control-button {
-      font-size: x-small;
-  }
-
-    .strict-text {
-      display: inline;
-  }
-
-    .str-icon {
-        display: none;
-    }
-
-    .htp-text {
-      display: inline;
-  }
-
-    .fa-book-open {
-      display: none;
-  }
-
-  .game-button {
-  width: 72px;
-  height: 72px;  
-}
-
-.light-display {
-    font-size: large;
-}
-
-/*----tablet----*/
-@media only screen and (min-width: 768px) {
-    .game-title {
-      font-size: xx-large;
-      margin-bottom: 15px;
-  }
-
-    .outer {
-    position: relative;
-    height: 80vh;
-    width: 70vw;
-    margin: auto;
-  }
-
-  .light {
-    width: 20px;
-    height: 20px;
-}
-}
-
-/*----laptop-small----*/
-@media only screen and (min-width: 1024px) {
-    .control-top {
-    height: 60px;
-    padding: 5px;
-}
-
-    .control-button {
-    padding: 0 10px;
-    margin: 0 5px;
-    font-size: medium;
-}
-
-    .round-count {
-    display: inline-block;
-    padding-left: 15px;
-    line-height: 45px;
-}
-
-    .counter {
-     margin-left: 8px;
-    height: 50px;
-    width: 50px;
-    line-height: 45px;
-    font-size: large;
-}
-
-    .base {
-    width: 310px;
-    height: 310px;
-}
-
-  .game-button {
-    width: 152px;
-    height: 152px;  
-}
-
-  .stick-base {
-    width: 120px;
-    height: 120px;
-  }
-
-  .stick {
-    width: 90px;
-    height: 90px;
-    line-height: 80px;
-  }
-}
-
-/*----laptop-large----*/
-@media only screen and (min-width: 1440px) {
-
+	.instruction-header {
+		display: none;
+	}
+	.base {
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+		margin-top: -5px;
+		top: -10px;
+	}
+	.control-button {
+		font-size: x-small;
+	}
+	.strict-text {
+		display: inline;
+	}
+	.str-icon {
+		display: none;
+	}
+	.htp-text {
+		display: inline;
+	}
+	.fa-book-open {
+		display: none;
+	}
+	.game-button {
+		width: 72px;
+		height: 72px;
+	}
+	.light-display {
+		font-size: large;
+	}
+	/*----tablet----*/
+	@media only screen and (min-width: 768px) {
+		.game-title {
+			font-size: xx-large;
+			margin-bottom: 15px;
+		}
+		.outer {
+			position: relative;
+			height: 80vh;
+			width: 70vw;
+			margin: auto;
+		}
+		.light {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	/*----laptop-small----*/
+	@media only screen and (min-width: 1024px) {
+		.control-top {
+			height: 60px;
+			padding: 5px;
+		}
+		.control-button {
+			padding: 0 10px;
+			margin: 0 5px;
+			font-size: medium;
+		}
+		.round-count {
+			display: inline-block;
+			padding-left: 15px;
+			line-height: 45px;
+		}
+		.counter {
+			margin-left: 8px;
+			height: 50px;
+			width: 50px;
+			line-height: 45px;
+			font-size: large;
+		}
+		.base {
+			width: 310px;
+			height: 310px;
+		}
+		.game-button {
+			width: 152px;
+			height: 152px;
+		}
+		.stick-base {
+			width: 120px;
+			height: 120px;
+		}
+		.stick {
+			width: 90px;
+			height: 90px;
+			line-height: 80px;
+		}
+	}
+	/*----laptop-large----*/
+	@media only screen and (min-width: 1440px) {
