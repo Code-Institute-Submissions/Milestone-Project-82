@@ -34,7 +34,8 @@ onButton.addEventListener("click", (event) => {
 	if (on == false) {
 		on = true;
 		roundCounter.innerHTML = "-";
-		onLight.classList.add("lightOn");
+        onLight.classList.add("lightOn");
+        onLight.classList.remove("lightOff");
 		flashColour();
 		setTimeout(() => {
 			clearColour();
@@ -56,7 +57,7 @@ onButton.addEventListener("click", (event) => {
 strictButton.addEventListener("click", (event) => {
 	if (on == true && strict == false) {
 		strict = true;
-		strictLight.classList.add("lightOn");
+        strictLight.classList.add("lightOn");
 	} else {
 		strict = false;
 		strictLight.classList.remove("lightOn");
