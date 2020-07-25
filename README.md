@@ -2,8 +2,8 @@
 ## Interactive Front-End Milestone Project - Code Institue ##
 
 A memory game based on the popular Simon game, made with HTML, CSS and JS and with
-the aesthetic of an arcade stick.This game is build to be played in landscape mode on devices. I
-have been experimenting with a way to only load the website in landscape but have not implimented
+the aesthetic of an arcade stick. This game is build to be played in landscape mode on devices. I
+have been experimenting with a way to only load the website in landscape but have not implemented
 that function yet.  
 The goal of this project was to show a better understanding of HTML amd CSS
 and an understanding of the basics of JS.
@@ -21,7 +21,7 @@ their memory, possibly also other students that are learning to code.
 ### Developer ###
 * I am the creator of this project and want to see it work well. I wanted to create
 an interesting design that was still easy to understand and fun to play.
-* As i was manually testing the flashing buttons, i was very happy to have a mute button.
+* As I was manually testing the flashing buttons, I was very happy to have a mute button.
 ### New User ###
 * A new user of this game wanted the instructions to be clear.
 * I am a new user of memory games and enjoy getting to higher rounds than previous games.
@@ -29,30 +29,30 @@ an interesting design that was still easy to understand and fun to play.
 * I have continued to use this game to test my memory and found strict mode to be rewarding but
 also infuriating.
 ### Laptop User ###
-* I am a user that mostly uses a laptop, with this site being built mobile first, i want the
+* I am a user that mostly uses a laptop, with this site being built mobile first, I want the
 experience on laptop to be just as enjoyable.
 ## Design Process ##
 ### Strategy Plane ###
-* I wanted to create a project that would be a fun project for me to work on and also show that my knowledge of HTML and CSS had increased and i
+* I wanted to create a project that would be a fun project for me to work on and also show that my knowledge of HTML and CSS had increased and I
     now have a good understanding of the basics of JS.
-* I decided to go with the Simon memory game as it was a game i played and enjoyed as a child, also there was a good
-    amount of information available to me online for help and insperation.
-* The arcade stick visual i decided on because i am a big fan of fighting games like Tekken and often use an arcade stick to play them. The
-    buttons on my stick are Similar colours to the Simon lights which is what originally gave me the idea.
+* I decided to go with the Simon memory game as it was a game I played and enjoyed as a child, also there was a good
+    amount of information available to me online for help and inspiration.
+* The arcade stick visual I decided on because I am a big fan of fighting games like Tekken and often use an arcade stick to play them. The
+    buttons on my stick are similar colours to the Simon lights which is what originally gave me the idea.
 ### Scope Plane ###   
 For the game to be functional and enjoyable the key features are:
 * It had to be easy to understand the rules for new players, the control buttons had to be easy to tell apart.
-* The differece between the on button and the start button have to be obvious to the player.
+* The differece between the 'on' button and the 'start' button have to be obvious to the player.
 * The game buttons flash has to be long enough to be noticeable but not too long to slow down the game.
-* The site was developed to be played in landscape mode on devices a feature not yet implimented to this site
+* The site was developed to be played in landscape mode on devices a feature not yet implemented to this site
 would be to only load the website in landscape mode.
 ### Structure Plane ###
 * I added a heading on mobile to direct players to the game instructions button.
 * To make sure it is easy to know what each button does a key to describe the buttons, 
 their icons and detailed instructions on how to play the game appear onscreen for player to read.
 ### Skeleton Plane ###
-* Now that i had an idea of what i wanted the game to look like i started to create some mockups.
-* I first started by drawing a rough design of what i wanted the game to look like.![Mockup drawing of Simon game](assets/images/Simon-mockup2.jpg)
+* Now that I had an idea of what I wanted the game to look like I started to create some mockups.
+* I first started by drawing a rough design of what I wanted the game to look like.![Mockup drawing of Simon game](assets/images/Simon-mockup2.jpg)
 * I then used [Figma](http://figma.com/) to flesh out the design ![Figma mockup of Simon game](assets/images/Laptop.png)
 ### Surface Plane ###
 * Background
@@ -64,40 +64,40 @@ their icons and detailed instructions on how to play the game appear onscreen fo
     * Original Surfer font. I went with this font as its a nice playful font that's 
     rounded edges work well with the rounded edges of the game.
 * Control buttons
-    * The buttons have a brushed metal background, i used a diffrent background for the control buttons
+    * The buttons have a brushed metal background, I used a different background for the control buttons
     to make sure they stood out from all the other components.
 * Display lights
     * On light - Light turns on when power button is pressed to give visual feedback to players that game has been turned on.
     * Strict light - Light turns on when power is on and player presses strict button to give visual feedback that strict mode is active.
-    * Mute light - Light turns on when power is on and player presses mute button to give visual feedback that button has been pressed.
+    * Mute light - Light turns on when power is on and player presses mute button to give visual feedback that the mute button has been pressed.
 * Round counter
     * The round counter is more visual feed back that game had been turned on, the counter will show 'ON'.
-    * The round count will tell player what round they are on.
-    * If player makes a wrong guess counter will show 'NO!' to let player know of wrong guess.
+ bv * The round count will tell player what round they are on.
+    * If player makes a wrong guess counter will show 'NO!' to let player know of a wrong guess.
 * Start button 
     * The start button takes the appearence of a joystick.
-    * Crimson background colour. As most joysticks i have seen are red or blue i wanted to go with one of these colours.
+    * Crimson background colour. As most joysticks I have seen are red or blue I wanted to go with one of these colours.
     I went with crimson as: 
         * It stands out against the grey background better than blue.
         * It is slightly lighter than red so black text is easier to red on it.
 * Game buttons    
 Bright colours for the game buttons to draw player attention to them, with
-a black border and shadow to add depth.
+a black border and box-shadow to add depth.
     * Red - #cc2900
     * Green - #00b300
     * Blue - #0000cc
     * Yellow - #ffcc00
     * Button flash - #ffffff - went with white instead of lighter/darker shade of same colour
-    as i thought a white flash was more eye catching.
+    as I thought a white flash was more eye catching.
     * Buttons will all flash simultaneously when game is turned on giving the player feedback that the game 
     is on.
 ## Design ##
 #### Overall Design ####
-* The design of this game is based on a arcade stick. I chose this design as i am a big fan of the retro style and
-and i belive its an original design.
+* The design of this game is based on a arcade stick. I chose this design as I am a big fan of the retro style and
+and I belive its an original design.
 #### Colours
 * Heading 
-    * Black with Whitesmoke outline - Stands out well and is easy to read against wood background.
+    * Black with Whitesmoke outline - Stands out well and is easy to read against the wood background.
 * Game Body Colour
     * #3b3535 - Darkish grey - nice flat colour for all other details to stand out against.
 * Text Colour
@@ -118,14 +118,14 @@ and i belive its an original design.
     * Blue - #0000cc
     * Yellow - #ffcc00
     * Button flash - #ffffff - went with white instead of lighter/darker shade of same colour
-    as i thought white was more eye catching.
+    as I thought white was more eye catching.
     * Border - 2px black - Adds a thicker outline to buttons giving them some added depth.
     * Box shadow - I used box-shadow to also try to give the buttons some extra depth.
 #### Font
 * 'Original Surfer - Imported from Google Fonts. I went with this font as its a nice playful font that's 
     rounded edges work well with the rounded edges of the game.
 #### Icons  
-All the icons i used are from [Font Awesome](https://fontawesome.com/)
+All the icons I used are from [Font Awesome](https://fontawesome.com/)
 * On Button
     * I went with a widely accepted icon for the on button as its
         easily recognisable to most people.
@@ -133,7 +133,7 @@ All the icons i used are from [Font Awesome](https://fontawesome.com/)
     * I went with a widely accepted icon the mute button as its
         easily recognisable to most people.
 * Strict Button
-    * The strict button was a difficult one for me to find an icon for, i decided
+    * The strict button was a difficult one for me to find an icon for, I decided
         to use text instead of an icon for all screen sizes apart from small mobile, where there was not enough
         space for text. I went with the warning icon to warn players that this is a harder mode.
 * How To Play Button
@@ -142,7 +142,7 @@ All the icons i used are from [Font Awesome](https://fontawesome.com/)
         in the button, so players can tell what the button does instantly.
 * Mute Display Light
     * Volume mute icon.
-    * I went for a different icon for the display light than the button as i thought having the display light
+    * I went for a different icon for the display light than the button as I thought having the display light
         start in an off state with a sound on icon next to it, players would think the game started with mute on.
 #### Background ####
 * From [subtlepatterns.](https://www.toptal.com/designers/subtlepatterns)
@@ -205,13 +205,13 @@ All the icons i used are from [Font Awesome](https://fontawesome.com/)
 * [W3C Code Validator](https://validator.w3.org/)
     * For checking markup
 * [Am I Responsive](http://ami.responsivedesign.is/)
-    * Used to check responsiveness over mutiple screen sizes
+    * Used to check responsiveness over multiple screen sizes
 * [Figma](http://figma.com/)
     * Figma for creating mockups
 * [W3school](https://www.w3schools.com/)
     * w3schools for tutorials and HTML colour picker
-<!--* <a src="https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)">Jasmine Testing</a>
-    * Jasmine used to test JS code-->
+* <a src="https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)">Jasmine Testing</a>
+    * Jasmine used to test JS code
 
 ## Testing ##
 ### Manual Testing ###
@@ -268,11 +268,35 @@ This process involved:
 * Then pasting your code into the text box and and pressing the check button below the text box.
 * Any errors in your code will then be revealed.
 #### HTML ####  
-I had one error when i validated my code, all i had to do to fix it was move the 'title' tag further up the page
+I had one error when I validated my code, all I had to do to fix it was move the 'title' tag further up the page
 above the 'audio' tags.
 #### CSS ####
 I also only had one error with my css validation, it was a parse error. I had missed
-a closing bracket on the mobile-medium media query
+a closing bracket on the mobile-medium media query.
+
+## Jasmine Testing ##  
+I admittedly left the Jasmine testing aspect of this project a bit too late, with my zero experience of Jasmine it took me far longer
+than I thought it would to get to grips with this framework. 
+* I installed the Jasmine files locally and also ran the test locally using the Gitpod preview tab. This process involved:
+    1. Go to [cdnjs](https://cdnjs.com/libraries/jasmine)
+    2. Copy the script tags and links of these files:
+        * jasmine.js
+        * jasmine-html.js
+        * boot.js
+        * jasmine.css
+    3. I also used [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
+    4. Paste the tags in the head element under the title tag.
+    5. Create a folder called spec to house the test files, then create a file in there to write your tests.
+    6. At the bottom of the body create a script tag to link your test file.
+    7. I ran my tests locally using the preview tab in Gitpod.
+    8. More detailed instructions on the [jasmine github page](https://jasmine.github.io/).
+* To access my deployed version with the test, just change the end of the url from /index.html to /jasmine-testing-index.html
+* I was able to test:
+    * If the clearColour function was called successfully when the game was switched off.
+    * If the start button would call the play function if the game was on, and would not if the game was off.
+    * If the audio would correctly play when the buttons are clicked/flashed.
+![](assets/images/jasmine-tests.png) 
+
 ## Deployment ##
 The live site is deployed on [GitHub pages](https://james-stewart110.github.io/Milestone-Project-2/).</a>
 
@@ -304,8 +328,8 @@ It may take a moment for changes to appear on the hosted website.<br>
 
 ## Credits ##
 * [Freecodecamp](https://www.freecodecamp.org/)
-    * As this was my first project with JS, with the limited knowledge i have
-    on the subject and also having learned to not try to re-invent the wheel, i decided
+    * As this was my first project with JS, with the limited knowledge I have
+    on the subject and also having learned to not try to re-invent the wheel, I decided
     to use code available to me online and fit it to my needs.
 * [Instructions](https://www.hasbro.com/common/instruct/Simon.PDF)
     * Instructions from hasbro website
