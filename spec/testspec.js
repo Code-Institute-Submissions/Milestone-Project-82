@@ -1,4 +1,5 @@
-describe('On button', () => {
+//Tests that the on button turns the game off and return buttons colours to normal
+describe('On/Off button', () => {
     describe('Turning the game off', () => {
         
         beforeEach(function() {
@@ -14,18 +15,7 @@ describe('On button', () => {
     })
 })
 
-describe('mute button', () => {
-    describe('display light for mute button', () => {
-        it('should have lightOn class', () => {
-            spyOn($('#mute'), 'click');
-            $('#power').click();
-            $('#mute').click();
-            expect($('#muteLight')).toHaveClass('lightOn')
-        })
-    })
-    
-})
-
+//Tests that the start button will call the play function only when the game is on
 describe('start button', () => {
     beforeEach(() => {
         on = false;
@@ -46,3 +36,40 @@ describe('start button', () => {
         })
     })
 })
+//Tests that the game buttons all play audio when mute is off
+describe('game buttons', () => {
+    beforeEach(() => {
+        on = true;
+        mute = false;
+    })
+    it("red button should play audio when clicked or flashed", () => {
+        spyOn(window, 'one')
+        var a = new one();
+        a.audio = jasmine.createSpy();
+        a.audio();
+        expect(a.audio).toHaveBeenCalled()
+        })
+    it("green button should play audio when clicked or flashed", () => {
+        spyOn(window, 'one')
+        var a = new two();
+        a.audio = jasmine.createSpy();
+        a.audio();
+        expect(a.audio).toHaveBeenCalled()
+        })
+    it("blue button should play audio when clicked or flashed", () => {
+        spyOn(window, 'one')
+        var a = new three();
+        a.audio = jasmine.createSpy();
+        a.audio();
+        expect(a.audio).toHaveBeenCalled()
+        })
+    it("yellow button should play audio when clicked or flashed", () => {
+        spyOn(window, 'one')
+        var a = new four();
+        a.audio = jasmine.createSpy();
+        a.audio();
+        expect(a.audio).toHaveBeenCalled()
+        })
+})
+
+
