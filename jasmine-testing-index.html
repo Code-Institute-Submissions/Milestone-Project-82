@@ -25,11 +25,6 @@
       type="image/png"
       href="jasmine/lib/jasmine-3.5.0/jasmine_favicon.png"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="jasmine/lib/jasmine-3.5.0/jasmine.css"
-    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <!--Audio files from https://www.freecodecamp.org/news/simon-javascript-game-tutorial/-->
     <title>Simon Memory Game</title>
@@ -41,18 +36,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js" integrity="sha256-qazAASTTgUrq9SOYkPSB3oEuqbhn+2j4kxGkVZ0GKjY=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js" integrity="sha256-HG8TKl0T65NyELmbUoo0H7/a1e++smYdXXtuuEsyKok=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.css" integrity="sha256-YzqdEMEXu1sH1t2Y9tk3XhKhxy1xMWvcA1koZx43k+8=" crossorigin="anonymous" />
-    <audio id="audio1">
-      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" />
-    </audio>
-    <audio id="audio2">
-      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" />
-    </audio>
-    <audio id="audio3">
-      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" />
-    </audio>
-    <audio id="audio4">
-      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" />
-    </audio>
   </head>
   <body>
     <!-----------------------Game Title----->
@@ -60,62 +43,6 @@
     <!-----------------------Instructions Header----->
     <div class="instruction-header font-surfer outline">
       Press <i class="fas fa-book-open"></i> for instructions
-    </div>
-    <!-----------------------Rules Modal----->
-    <div
-      class="modal fade"
-      id="rules-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="HTP"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="HTP">How To Play</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body bg-dark text-light">
-            <h3>Buttons:</h3>
-            <span><i class="fas fa-power-off"></i> : Power Switch</span><br />
-            <span><i class="fas fa-volume-up"></i> : Mute Button</span><br />
-            <span
-              ><i class="fas fa-exclamation-triangle str-icon"> : </i>
-              <span class="font-surfer">Strict</span> mode - This will send you
-              back to start with a wrong guess.</span
-            ><br />
-            <span><span class="font-surfer">START</span> : Start button</span
-            ><br />
-            <br />
-            <h3>How to play:</h3>
-            <p>
-              1. Press <i class="fas fa-power-off"></i> to turn on the game.<br />
-              2. You can then decide if you want to play in strict mode or
-              not.<br />
-              3. Press the <span class="font-surfer">START</span> button on the
-              left to begin the game and Simon will give the first signal.
-              Repeat the signal by pressing the same colour button.<br />
-              4. Simon will duplicate the first signal and then add one. Repeat
-              the two signals by pressing the same colour buttons, in order.<br />
-              5. Simon will duplicate the first two signals and add one.<br />
-              6. Continue playing as long as you can repeat each sequence
-              correctly.
-            </p>
-            <br />
-            <h3>How to win:</h3>
-            <p>Make it past round 20 and you WIN!</p>
-            <!---instructions from https://www.hasbro.com/common/instruct/Simon.PDF-->
-          </div>
-        </div>
-      </div>
     </div>
     <!-----------------------Game-Container----->
     <div class="container-sm outer">
