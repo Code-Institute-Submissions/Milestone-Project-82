@@ -56,7 +56,8 @@ onButton.addEventListener("click", (event) => {
 /*-------------------------------------------Strict mode on/off--*/
 strictButton.addEventListener("click", (event) => {
 	if (on == true && strict == false) {
-		strict = true;
+        strict = true;
+        strictLight.classList.remove("lightOff");
         strictLight.classList.add("lightOn");
 	} else {
 		strict = false;
@@ -67,7 +68,8 @@ strictButton.addEventListener("click", (event) => {
 /*-------------------------------------------Mute on/off--*/
 muteButton.addEventListener("click", (event) => {
 	if (on == true && mute == false) {
-		mute = true;
+        mute = true;
+        muteLight.classList.remove("lightOff");
 		muteLight.classList.add("lightOn");
 	} else {
 		mute = false;
